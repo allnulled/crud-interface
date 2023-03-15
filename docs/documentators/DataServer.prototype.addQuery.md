@@ -1,0 +1,34 @@
+**Descripción:**
+
+Esta función (prototipada) sirve para añadir nuevas queries o **consultas de datos** al `DataServer`.
+
+> Por **consultas de datos** se entienden las clases que derivan de `QueryService` y representan puntos de una aplicación en los que se gestionan operaciones de datos mínimamente complejas.
+
+**Parámetros:**
+
+Parámetro 1: interfaz estática
+
+  - **Nombre:** `staticInterface`
+  - **Tipo:** `Object`
+  - **Valor por defecto:** `{}`
+  - **Descripción:** Este parámetro extiende la instancia de `QueryService` a ser creada, mediante `Object.assign`.
+
+Parámetro 2: interfaz dinámica
+
+  - **Nombre:** `dynamicInterface`
+  - **Tipo:** `Object`
+  - **Valor por defecto:** `{}`
+  - **Descripción:** Este parámetro extiende la instancia de `QueryService.prototype` a ser creada, mediante `Object.assign`.
+
+Parámetro 3: función constructora
+
+  - **Nombre:** `constructorFunction`
+  - **Tipo:** `Function`
+  - **Valor por defecto:** `() => undefined`
+  - **Descripción:** Este parámetro es el constructor de instancias del servicio.
+
+**Retorno:**
+
+  - **Tipo:** `Object`
+  - **Interfaz:** `DataServer`
+  - **Descripción:** Esta función retorna la instancia de `DataServer` que ha gestionado la operación, lista para continuar añadiendo queries tal que `dataServer.addQuery({ ... }).addQuery({ ... })`.

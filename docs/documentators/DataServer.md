@@ -1,0 +1,18 @@
+**Descripción:**
+
+Esta función (constructora de clase y no prototipada) sirve para orquestrar los servicios, el gestor de datos y el gestor de autentificación, entre otras utilidades más secundarias como: despachar peticiones, generar un despachador de peticiones, generar un controlador de servidor o generar un servidor HTTP para Node.js. Esta clase es la clase principal de la API y, de hecho, las demás clases son propiedades estáticas suyas también.
+
+**Parámetros:**
+
+Parámetro único: 
+
+  - **Nombre:** `dyanmicInterface`
+  - **Tipo:** `Object`
+  - **Valor por defecto:** `{}`
+  - **Descripción:** Este parámetro extiende la instancia de `DataServer` a ser creada, mediante `Object.assign`.
+
+**Retorno:**
+
+  - **Tipo:** `Object`
+  - **Interfaz:** `DataServer`
+  - **Descripción:** Esta función retorna la instancia de `DataServer`, lista para ser inicializada con `dataServer.initialize`.

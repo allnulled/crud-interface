@@ -1,0 +1,767 @@
+creo Rasgos como {}.
+
+asigno Rasgos.RasgoDeControlDeTexto como {
+    propiedad props como {
+        valor: {
+            type: String,
+            default: una lambda donde retorno ""
+        },
+        vincularValor: {
+            type: Array,
+            default: []
+        }
+    }.
+    método data donde {
+        retorno {
+            internal_value: this.valor
+        }.
+    }.
+    propiedad watch como {
+        método internal_value con (nuevoValor) donde {
+            si this.vincularValor es tipo lista y this.vincularValor.length es mayor que 1 y this.vincularValor[1] es tipo texto {
+                asigno this.vincularValor[0][this.vincularValor[1]] como nuevoValor.
+            }.
+        }.
+    }.
+}.
+
+creo SeparadorHorizontal como un componente vue2 con nombre "SeparadorHorizontal" con plantilla {
+    <hr class="SeparadorHorizontal Component margin_vertical_2"></hr>
+}.
+
+creo ContenidoDePagina como un componente vue2 con nombre "ContenidoDePagina" con plantilla {
+    <div class="ContenidoDePagina Component">
+        <div class="contenido">
+            <slot></slot>
+        </div>
+    </div>
+}.
+
+creo TituloDePagina como un componente vue2 con nombre "TituloDePagina" con plantilla {
+    <div class="TituloDePagina Component padding_2">
+        <h1>
+            <table>
+                <tr>
+                    <td style="width: 100%; text-align: left;"><slot></slot></td>
+                    <td :class="{invisible: !atrasHacia}">
+                        <ControlParaBoton style="vertical-align: middle;" :al-clicar="() => $router.history.push(atrasHacia)">Atrás</ControlParaBoton>
+                    </td>
+                </tr>
+            </table>
+        </h1>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            atrasHacia: {
+                type: String,
+                default: una lambda donde retorno ""
+            }
+        }.
+        método data donde {
+            retorno {
+                
+            }.
+        }.
+    }.
+}.
+
+creo LayoutCentradoFijo como un componente vue2 con nombre "LayoutCentradoFijo" con plantilla {
+    <div class="LayoutCentradoFijo Component">
+        <div class="layout_centrado_fijo_contenedor_1">
+            <div class="layout_centrado_fijo_contenedor_2">
+                <div class="layout_centrado_fijo_contenedor_3">
+                    <div class="layout_centrado_fijo_contenedor_4">
+                        <div class="layout_centrado_fijo_contenido sombreado">
+                            <slot></slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}.
+
+creo LayoutHorizontal como un componente vue2 con nombre "LayoutHorizontal" con plantilla {
+    <div class="LayoutHorizontal Component" :style="'box-sizing: border-box; padding-right: 0px; margin-left: 0px; margin-top: -' + separacion + 'px;'">
+        <table style="width: 100%; box-sizing: border-box;" :style="'border-collapse: ' + (separacion ? 'separate' : 'collapse') + '; border-spacing: ' + separacion + 'px;'">
+            <slot></slot>
+        </table>
+    </div>
+} con lógica {
+    retorno {
+        props: {
+            separacion: {
+                type: Number,
+                default: una función donde retorno 0
+            }
+        }
+    }.
+}.
+
+creo FilaHorizontal como un componente vue2 con nombre "FilaHorizontal" con plantilla {
+    <tr class="FilaHorizontal Component" style="display: table-row; height: 100%;">
+        <slot></slot>
+    </tr>
+}.
+
+creo CeldaHorizontal como un componente vue2 con nombre "CeldaHorizontal" con plantilla {
+    <td class="CeldaHorizontal Component" :class="clases" :style="'display: table-cell; width: ' + ancho + '; vertical-align: top; height: inherit;'" :colspan="columnas">
+        <slot></slot>
+    </td>
+} con lógica {
+    retorno {
+        props: {
+            columnas: {
+                type: Number,
+                default: una función donde retorno 1
+            },
+            separacion: {
+                type: Number,
+                default: una función donde retorno 0
+            },
+            ancho: {
+                type: String,
+                default: una función donde retorno "1%"
+            },
+            clases: {
+                type: [String,Object],
+                default: una función donde retorno ""
+            }
+        }
+    }.
+}.
+
+creo SoloEscritorio como un componente vue2 con nombre "SoloEscritorio" con plantilla {
+    <div class="SoloEscritorio1 SoloEscritorio2 SoloEscritorio3 Component">
+        <slot></slot>
+    </div>
+}.
+
+creo SoloTablet como un componente vue2 con nombre "SoloTablet" con plantilla {
+    <div class="SoloTablet1 SoloTablet2 SoloTablet3 Component">
+        <slot></slot>
+    </div>
+}.
+
+creo SoloMovil como un componente vue2 con nombre "SoloMovil" con plantilla {
+    <div class="SoloMovil1 SoloMovil2 Component">
+        <slot></slot>
+    </div>
+}.
+
+creo LayoutVertical como un componente vue2 con nombre "LayoutVertical" con plantilla {
+    <div class="LayoutVertical Component">
+        <slot></slot>
+    </div>
+}.
+
+creo CeldaVertical como un componente vue2 con nombre "CeldaVertical" con plantilla {
+    <div class="CeldaVertical Component">
+        <slot></slot>
+    </div>
+}.
+
+creo Carta como un componente vue2 con nombre "Carta" con plantilla {
+    <div class="Carta Component">
+        <slot></slot>
+    </div>
+}.
+
+creo Contextualizador como un componente vue2 con nombre "Contextualizador" con plantilla {
+    <div class="Contextualizador Component padding_2 margin_2 margin_bottom_0" v-if="contexto">
+        <template v-for="(itemContextual, indexContextual) in contexto">
+            <span style="display: inline-block;" class="item_de_contexto" v-bind:key="'contextualizador-' + uuid + '-item-' + indexContextual">
+                <span v-if="indexContextual !== 0"> » </span>
+                <Hipervinculo class="padding_1" v-if="itemContextual.link" :hipervinculo="itemContextual.link"> {{ itemContextual.texto }} </Hipervinculo>
+                <span class="padding_1" v-else> {{ itemContextual.texto }} </span>
+            </span>
+        </template>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            uuid: {
+                type: String,
+                default: una función donde retorno un texto aleatorio de 10 caracteres
+            },
+            contexto: {
+                type: Array,
+                required: true
+            }
+        }.
+    }.
+}.
+
+
+creo ExploradorDeSecciones como un componente vue2 con nombre "ExploradorDeSecciones" con plantilla {
+    <div class="ExploradorDeSecciones Component">
+        <TituloDePagina :atras-hacia="atrasHacia">{{ accederTitulo(arbolDeSecciones, seccion) }}</TituloDePagina>
+        <Contextualizador :contexto="subseccionSeleccionada.$contexto"></Contextualizador>
+        <ContenidoDePagina>
+            <div>Secciones disponibles:</div>
+            <ListaNumerada>
+                <template v-for="(item, itemIndex) in subseccionSeleccionada">
+                    <ItemDeLista v-if="!itemIndex.startsWith('$')" v-bind:key="'seccion-explorable-' + itemIndex">
+                        <Hipervinculo :hipervinculo="item.$hipervinculo">
+                        {{ item.$titulo }}
+                        </Hipervinculo>
+                    </ItemDeLista>
+                </template>
+            </ListaNumerada>
+        </ContenidoDePagina>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            atrasHacia: {
+                type: String,
+                default: una lambda donde retorno "/"
+            },
+            arbolDeSecciones: {
+                type: Object,
+                default: una lambda donde retorno {}
+            },
+            seccion: {
+                type: Array,
+                default: una lambda donde retorno []
+            }
+        }.
+        método data donde {
+            retorno {
+                subseccionSeleccionada: this.accederSubseccion(this.arbolDeSecciones, this.seccion)
+            }.
+        }.
+        propiedad watch como {
+            seccion: una función con (nuevoValor) donde {
+                asigno this.subseccionSeleccionada como this.accederSubseccion(this.arbolDeSecciones, nuevoValor).
+            }
+        }.
+        propiedad methods como {
+            método accederTitulo con (arbol, seccion) donde {
+                creo variable acceso como arbol.
+                desde 0 hasta seccion.length {
+                    asigno acceso como acceso[seccion[index]].
+                }.
+                retorno acceso.$titulo.
+            }.
+            método accederSubseccion con (arbol, seccion) donde {
+                creo variable acceso como arbol.
+                desde 0 hasta seccion.length {
+                    asigno acceso como acceso[seccion[index]].
+                }.
+                retorno acceso.
+            }.
+        }.
+    }.
+}.
+
+creo PaginaDeSeccion como un componente vue2 con nombre "PaginaDeSeccion" con plantilla {
+    <div class="PaginaDeSeccion Component">
+        <ExploradorDeSecciones :arbol-de-secciones="arbolDeSecciones" :seccion="seccion" :atras-hacia="atrasHacia"></ExploradorDeSecciones>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            atrasHacia: {
+                type: String,
+                default: una lambda donde retorno "/"
+            },
+            seccion: {
+                type: Array,
+                default: una lambda donde retorno []
+            }
+        }.
+        método data donde {
+            retorno {
+                arbolDeSecciones: {
+                    votaciones: {
+                        $titulo: "Votaciones",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Votaciones" }],
+                        @POR-SEGUIR:
+                        problemas: {
+                            $titulo: "Problemas",
+                            $hipervinculo: "/votaciones/problemas",
+                            $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { texto: "Problemas" }],
+                            aprobados: {
+                                $titulo: "Problemas aprobados",
+                                $hipervinculo: "/votaciones/problemas/aprobados",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/problemas", texto: "Problemas" }, { texto: "Aprobados" }]
+                            },
+                            destacados: {
+                                $titulo: "Problemas destacados",
+                                $hipervinculo: "/votaciones/problemas/destacados",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/problemas", texto: "Problemas" }, { texto: "Destacados" }]
+                            },
+                            propuestos: {
+                                $titulo: "Problemas propuestos",
+                                $hipervinculo: "/votaciones/problemas/propuestos",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/problemas", texto: "Problemas" }, { texto: "Propuestos" }]
+                            },
+                            nuevo: {
+                                $titulo: "Nuevo problema",
+                                $hipervinculo: "/votaciones/problemas/nuevo",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/problemas", texto: "Problemas" }, { texto: "Nuevo" }]
+                            }
+                        },
+                        soluciones: {
+                            $titulo: "Soluciones",
+                            $hipervinculo: "/votaciones/soluciones",
+                            $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { texto: "Soluciones" }],
+                            aprobadas: {
+                                $titulo: "Soluciones aprobadas",
+                                $hipervinculo: "/votaciones/soluciones/aprobadas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/soluciones", texto: "Soluciones" }, { texto: "Aprobadas" }]
+                            },
+                            destacadas: {
+                                $titulo: "Soluciones destacadas",
+                                $hipervinculo: "/votaciones/soluciones/destacadas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/soluciones", texto: "Soluciones" }, { texto: "Destacadas" }]
+                            },
+                            propuestas: {
+                                $titulo: "Soluciones propuestas",
+                                $hipervinculo: "/votaciones/soluciones/propuestas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/soluciones", texto: "Soluciones" }, { texto: "Propuestas" }]
+                            },
+                            nueva: {
+                                $titulo: "Nueva solución",
+                                $hipervinculo: "/votaciones/soluciones/nueva",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/soluciones", texto: "Soluciones" }, { texto: "Nueva" }]
+                            }
+                        },
+                        implementaciones: {
+                            $titulo: "Implementaciones",
+                            $hipervinculo: "/votaciones/implementaciones",
+                            $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { texto: "Implementaciones" }],
+                            aprobadas: {
+                                $titulo: "Implementaciones aprobadas",
+                                $hipervinculo: "/votaciones/implementaciones/aprobadas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/implementaciones", texto: "Implementaciones" }, { texto: "Aprobadas" }]
+                            },
+                            destacadas: {
+                                $titulo: "Implementaciones destacadas",
+                                $hipervinculo: "/votaciones/implementaciones/destacadas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/implementaciones", texto: "Implementaciones" }, { texto: "Destacadas" }]
+                            },
+                            propuestas: {
+                                $titulo: "Implementaciones propuestas",
+                                $hipervinculo: "/votaciones/implementaciones/propuestas",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/implementaciones", texto: "Implementaciones" }, { texto: "Propuestas" }]
+                            },
+                            nueva: {
+                                $titulo: "Nueva solución",
+                                $hipervinculo: "/votaciones/implementaciones/nueva",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { link: "/votaciones/implementaciones", texto: "Implementaciones" }, { texto: "Nueva" }]
+                            }
+                        },
+                        seguimiento: {
+                            $titulo: "Seguimiento",
+                            $hipervinculo: "/votaciones/seguimiento",
+                                $contexto: [{ link: "/", texto: "Índice" }, { link: "/votaciones", texto: "Votaciones" }, { texto: "Seguimiento" }]
+                        }
+                    },
+                    leyes: {
+                        $titulo: "Leyes",
+                        $hipervinculo: "/leyes",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Leyes" }]
+                    },
+                    confrontaciones: {
+                        $titulo: "Confrontaciones",
+                        $hipervinculo: "/confrontaciones",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Confrontaciones" }]
+                    },
+                    educacion: {
+                        $titulo: "Educación",
+                        $hipervinculo: "/educacion",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Educación" }]
+                    },
+                    noticias: {
+                        $titulo: "Noticias",
+                        $hipervinculo: "/noticias",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Noticias" }]
+                    },
+                    economia: {
+                        $titulo: "Economía",
+                        $hipervinculo: "/economia",
+                        $contexto: [{ link: "/", texto: "Índice" }, { texto: "Economía" }]
+                    }
+                }
+            }.
+        }.
+    }.
+}.
+
+creo FormularioDeControles como un componente vue2 con nombre "FormularioDeControles" con plantilla {
+    <div class="FormularioDeControles Component">
+        <slot></slot>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            alEnviar: {
+                type: Function,
+                default: una lambda donde retorno undefined
+            }
+        }.
+        propiedad methods como {
+            método enviarFormulario con (evento) donde {
+                si this.alEnviar es tipo función {
+                    hago this.alEnviar(evento, this).
+                }.
+            }.
+        }.
+    }.
+}.
+
+creo EtiquetaParaControl como un componente vue2 con nombre "EtiquetaParaControl" con plantilla {
+    <div class="EtiquetaParaControl Component">
+        <slot></slot>
+    </div>
+}.
+
+creo ControlParaTexto como un componente vue2 con nombre "ControlParaTexto" con plantilla {
+    <div class="ControlParaTexto Component">
+        <EtiquetaParaControl>
+            <slot></slot>
+        </EtiquetaParaControl>
+        <input class="sombreado" type="text" v-model="internal_value"></input>
+    </div>
+} con lógica {
+    retorno {
+        ...incluyo Rasgos.RasgoDeControlDeTexto
+    }.
+}.
+
+creo ControlParaPassword como un componente vue2 con nombre "ControlParaPassword" con plantilla {
+    <div class="ControlParaPassword Component">
+        <EtiquetaParaControl>
+            <slot></slot>
+        </EtiquetaParaControl>
+        <input class="sombreado" type="password" v-model="internal_value"></input>
+    </div>
+} con lógica {
+    retorno {
+        ...incluyo Rasgos.RasgoDeControlDeTexto
+    }.
+}.
+
+creo ControlParaFechaConReloj como un componente vue2 con nombre "ControlParaFechaConReloj" con plantilla {
+    <div class="ControlParaFechaConReloj Component">
+        Reloj...
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            valor: Rasgos.RasgoDeControlDeTexto.props.valor,
+            vincularValor: Rasgos.RasgoDeControlDeTexto.props.vincularValor,
+            modo: "completo" # "calendario", "reloj"
+        }.
+        método data donde {
+            retorno {
+                internal_value: this.valor
+            }.
+        }.
+        propiedad watch como {
+            método internal_value con (nuevoValor) donde {
+                si this.vincularValor es tipo lista y this.vincularValor.length es mayor que 1 y this.vincularValor[1] es tipo texto {
+                    asigno this.vincularValor[0][this.vincularValor[1]] como nuevoValor.
+                }.
+            }.
+        }.
+    }.
+}.
+
+creo ControlParaFechaConCalendario como un componente vue2 con nombre "ControlParaFechaConCalendario" con plantilla {
+    <div class="ControlParaFechaConCalendario Component">
+        Calendario...
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            valor: Rasgos.RasgoDeControlDeTexto.props.valor,
+            vincularValor: Rasgos.RasgoDeControlDeTexto.props.vincularValor,
+            modo: "completo" # "calendario", "reloj"
+        }.
+        método data donde {
+            retorno {
+                internal_value: this.valor
+            }.
+        }.
+        propiedad watch como {
+            método internal_value con (nuevoValor) donde {
+                si this.vincularValor es tipo lista y this.vincularValor.length es mayor que 1 y this.vincularValor[1] es tipo texto {
+                    asigno this.vincularValor[0][this.vincularValor[1]] como nuevoValor.
+                }.
+            }.
+        }.
+    }.
+}.
+
+creo ControlParaFecha como un componente vue2 con nombre "ControlParaFecha" con plantilla {
+    <div class="ControlParaFecha Component">
+        <EtiquetaParaControl>
+            <slot></slot>
+        </EtiquetaParaControl>
+        <ControlParaFechaConCalendario v-if="['calendario','completo'].indexOf(modo) !== -1" />
+        <ControlParaFechaConReloj v-if="['completo','reloj'].indexOf(modo) !== -1" />
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            valor: Rasgos.RasgoDeControlDeTexto.props.valor,
+            vincularValor: Rasgos.RasgoDeControlDeTexto.props.vincularValor,
+            modo: "completo" # "calendario", "reloj"
+        }.
+        método data donde {
+            retorno {
+                internal_value: this.valor
+            }.
+        }.
+        propiedad watch como {
+            método internal_value con (nuevoValor) donde {
+                si this.vincularValor es tipo lista y this.vincularValor.length es mayor que 1 y this.vincularValor[1] es tipo texto {
+                    asigno this.vincularValor[0][this.vincularValor[1]] como nuevoValor.
+                }.
+            }.
+        }.
+    }.
+}.
+
+creo ControlParaBoton como un componente vue2 con nombre "ControlParaBoton" con plantilla {
+    <button class="ControlParaBoton Component sombreado" v-on:click="alClicar">
+        <slot></slot>
+    </button>
+} con lógica {
+    retorno {
+        propiedad props como {
+            alClicar: {
+                type: Function,
+                default: una lambda donde retorno {}
+            }
+        }.
+    }.
+}.
+
+creo ControlParaBotonDeEnvio como un componente vue2 con nombre "ControlParaBotonDeEnvio" con plantilla {
+    <button class="ControlParaBotonDeEnvio Component sombreado" v-on:click="enviar">
+        <slot></slot>
+    </button>
+} con lógica {
+    retorno {
+        propiedad props como {
+            vincularEnvio: {
+                type: Array,
+                default: una lambda donde retorno []
+            }
+        }.
+        método data donde {
+            retorno {
+
+            }.
+        }.
+        propiedad methods como {
+            método enviar donde {
+                si this.vincularEnvio es tipo lista y this.vincularEnvio.length es mayor que 0 {
+                    creo variable objetivo como this.vincularEnvio[0].
+                    desde 1 hasta this.vincularEnvio.length {
+                        asigno objetivo como objetivo[this.vincularEnvio[index]].
+                    }.
+                    hago objetivo().
+                }.
+            }.
+        }.
+    }.
+}.
+
+creo CajaSimple como un componente vue2 con nombre "CajaSimple" con plantilla {
+    <div class="CajaSimple Component">
+        <slot></slot>
+    </div>
+}.
+
+creo CajaHorizontal como un componente vue2 con nombre "CajaHorizontal" con plantilla {
+    <table class="CajaHorizontal Component">
+        <tbody>
+            <tr>
+                <slot></slot>
+            </tr>
+        </tbody>
+    </table>
+}.
+
+creo CajonHorizontal como un componente vue2 con nombre "CajonHorizontal" con plantilla {
+    <td class="CajonHorizontal Component">
+        <slot></slot>
+    </td>
+}.
+
+creo EspacioDeTexto como un componente vue2 con nombre "EspacioDeTexto" con plantilla {
+    <span class="EspacioDeTexto Component">
+        <slot></slot>
+    </span>
+}.
+
+creo Hipervinculo como un componente vue2 con nombre "Hipervinculo" con plantilla {
+    <router-link class="Hipervinculo Component" :to="hipervinculo">
+        <slot></slot>
+    </router-link>
+} con lógica {
+    retorno {
+        props: {
+            hipervinculo: {
+                type: String,
+                default: una lambda donde retorno "#"
+            }
+        }
+    }.
+}.
+
+creo ListaNumerada como un componente vue2 con nombre "ListaNumerada" con plantilla {
+    <ul class="ListaNumerada Component">
+        <slot></slot>
+    </ul>
+}.
+
+creo ItemDeLista como un componente vue2 con nombre "ItemDeLista" con plantilla {
+    <li class="ItemDeLista Component">
+        <slot></slot>
+    </li>
+}.
+
+creo PaginaDeInicio como un componente vue2 con nombre "PaginaDeInicio" con plantilla {
+    <div class="PaginaDeInicio Component">
+        <TituloDePagina>Índice</TituloDePagina>
+        <Contextualizador :contexto="[{ texto:'Índice' }]"></Contextualizador>
+        <ContenidoDePagina>
+            <ListaNumerada>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/guia">Guía</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/votaciones">Votaciones</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/leyes">Leyes</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/confrontaciones">Confrontaciones</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/educacion">Educación</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/noticias">Noticias</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/economia">Economía</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/preferencias">Preferencias</Hipervinculo>
+                </ItemDeLista>
+                <ItemDeLista>
+                    <Hipervinculo hipervinculo="/logout">Salir</Hipervinculo>
+                </ItemDeLista>
+            </ListaNumerada>
+        </ContenidoDePagina>
+    </div>
+}.
+
+creo PaginaDeLogin como un componente vue2 con nombre "PaginaDeLogin" con plantilla {
+    <div class="PaginaDeLogin Component">
+        <LayoutCentradoFijo>
+            <TituloDePagina style="min-width: 150px;">Identificación</TituloDePagina>
+            <ContenidoDePagina style="background-color: rgba(255,255,255,0.2);" class="padding_0">
+                <FormularioDeControles :al-enviar="this.enviarFormulario" ref="FormularioDeLogin">
+                    <ControlParaTexto :vincular-valor="[this,'internal_user']">Usuario:</ControlParaTexto>
+                    <ControlParaPassword :vincular-valor="[this,'internal_password']">Contraseña:</ControlParaPassword>
+                    <SeparadorHorizontal />
+                    <CajaSimple style="text-align: right;">
+                        <ControlParaBotonDeEnvio :vincular-envio="[this,'$refs','FormularioDeLogin', 'enviarFormulario']">Entrar</ControlParaBotonDeEnvio>
+                    </CajaSimple>
+                    <CajaSimple style="text-align: right;">
+                        <EspacioDeTexto style="font-size: 10px;">O regístrate <Hipervinculo :hipervinculo="'/register'">aquí</Hipervinculo></EspacioDeTexto>
+                    </CajaSimple>
+                </FormularioDeControles>
+            </ContenidoDePagina>
+        </LayoutCentradoFijo>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            app: {
+                type: Object,
+                required: true
+            }
+        }.
+        método data donde {
+            retorno {
+                internal_user: "",
+                internal_password: ""
+            }.
+        }.
+        propiedad methods como {
+            método enviarFormulario donde {
+                asigno this.app.authentication como {
+                    user: {},
+                    groups: [],
+                    privileges: [],
+                    session: {}
+                }.
+                hago this.$router.history.push("/").
+            }.
+        }.
+    }.
+}.
+
+creo PaginaDeLogout como un componente vue2 con nombre "PaginaDeLogout" con plantilla {
+    <div class="PaginaDeLogout Component">
+        <TituloDePagina style="min-width: 150px;" atras-hacia="/">Salir</TituloDePagina>
+        <Contextualizador :contexto="[{ link: '/', texto: 'Índice' }, { texto: 'Salir' }]"></Contextualizador>
+        <ContenidoDePagina>
+            <SeparadorHorizontal />
+            <CajaSimple>¿Seguro que quieres salir de la aplicación definitivamente?</CajaSimple>
+            <SeparadorHorizontal />
+            <CajaHorizontal>
+                <CajonHorizontal style="width:100%;"></CajonHorizontal>
+                <CajonHorizontal><ControlParaBoton :al-clicar="volver">Volver</ControlParaBoton></CajonHorizontal>
+                <CajonHorizontal><ControlParaBoton :al-clicar="salirDefinitivamente">Salir definitivamente</ControlParaBoton></CajonHorizontal>
+            </CajaHorizontal>
+        </ContenidoDePagina>
+    </div>
+} con lógica {
+    retorno {
+        propiedad props como {
+            app: {
+                type: Object,
+                required: true
+            }
+        }.
+        propiedad methods como {
+            método volver donde {
+                hago this.$router.history.push("/").
+            }.
+            método salirDefinitivamente donde {
+                asigno this.app.authentication como undefined.
+                hago this.$router.history.push("/login").
+            }.
+        }.
+    }.
+}.
+
+creo PaginaDePreferencias como un componente vue2 con nombre "PaginaDePreferencias" con plantilla {
+    <div class="PaginaDePreferencias Component">
+        <TituloDePagina atras-hacia="/">Preferencias</TituloDePagina>
+        <ContenidoDePagina>
+            
+        </ContenidoDePagina>
+    </div>
+}.
+
+creo PaginaDeGuia como un componente vue2 con nombre "PaginaDeGuia" con plantilla {
+    <div class="PaginaDeGuia Component">
+        <TituloDePagina atras-hacia="/">Guía</TituloDePagina>
+        <ContenidoDePagina>
+            
+        </ContenidoDePagina>
+    </div>
+}.

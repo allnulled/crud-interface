@@ -1,0 +1,34 @@
+importo api nativa.
+
+hago un hecho asíncrono donde {
+    conecto asíncronamente un sistema rest configurado con {
+        platform: "node",
+        debug: false
+    } con server configurado con {
+        adapter: "mysql",
+        credentials: {
+            user: "root",
+            password: "toor",
+            host: "127.0.0.1",
+            port: 3306,
+            database: "testing_rest_1"
+        }
+    } creando constante conexion.
+    hago asíncronamente conexion.resetDatabase().
+    inserto asíncronamente a varios ítems en modelo "auth_users" con valores [{
+        name: "usuario.1",
+        password: "usuario.1"
+    },{
+        name: "usuario.2",
+        password: "usuario.2"
+    },{
+        name: "usuario.3",
+        password: "usuario.3"
+    }] usando adaptador conexion.
+    selecciono asíncronamente a varios ítems en modelo "auth_users" filtrando por [["id","!=",2]] usando adaptador conexion creando constante usuarios.
+    selecciono asíncronamente a un ítem en modelo "auth_users" filtrando por [["id","=",2]] usando adaptador conexion creando constante usuarios2.
+    actualizo asíncronamente a un ítem en modelo "auth_users" filtrando por [["id","=",2]] con valores {email:"modificado@jeje.com"} usando adaptador conexion.
+    selecciono asíncronamente a un ítem en modelo "auth_users" filtrando por [["id","=",2]] usando adaptador conexion creando constante usuario2.
+    elimino asíncronamente a un ítem en modelo "auth_users" filtrando por [["id","=",2]] usando adaptador conexion.
+    selecciono asíncronamente a varios ítems en modelo "auth_users" filtrando por [["id","=",2]] usando adaptador conexion creando constante usuarios2noeliminados.
+} en errores imprimo error.

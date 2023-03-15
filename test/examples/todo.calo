@@ -1,0 +1,145 @@
+Ejecutable como documento HTML5
+    con autor allnulled
+    con nombre app-por-defecto
+    con versión 0.0.1
+<head>
+    <title>Aplicación de ejemplo</title>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body><div id="app"></div></body>.
+
+importo api nativa.
+
+creo PageContents como un componente vue2 con nombre "PageTitle" con plantilla {
+    <div class="PageTitle Component">
+        <slot></slot>
+    </div>
+}.
+
+creo PageTitle como un componente vue2 con nombre "PageTitle" con plantilla {
+    <div class="PageTitle Component">
+        <h1><slot></slot></h1>
+    </div>
+}.
+
+creo HomePage como un componente vue2 con nombre "HomePage" con plantilla {
+    <div class="HomePage Component">
+        <PageTitle>Aplicación de ejemplo</PageTitle>
+        <PageContents>
+            Contenido de página...
+        </PageContents>
+    </div>
+}.
+
+creo App como una aplicación vue2 con nombre "App" con rutas [{
+    propiedad path como "/".
+    propiedad name como "Home".
+    propiedad component como HomePage.
+    propiedad props como {}.
+}] con traducciones {
+    propiedad es como {}.
+    propiedad en como {}.
+    propiedad ca como {}.
+} con plantilla {
+    <div class="App Component">
+        <router-view></router-view>
+    </div>
+} con estilos {
+    html {}
+    body {}
+    .Component {}
+    .App {}
+} con lógica {
+    retorno {}.
+} montada en "#app".
+
+con plantilla compuesta por un elemento div con propiedad class como "App Component" compuesto {
+    por un elemento Header con propiedad title como "Titulo" con texto como "Un simple texto".
+    por un elemento router-view.
+    por un elemento Footer con propiedad title como "Título" compuesto {
+        por una capa "#capa_uno" compuesta {
+            por un elemento div con texto como "Un simple texto".
+        }.
+    }.
+    si dato.x es igual que 800 {
+        por un elemento Notificacion con propiedad mensaje como "El dato x es 800".
+    } pero si dato.x es menor que 800 {
+        por un elemento Notificacion con propiedad mensaje como "El dato x baja de 800".
+    } y si no {
+        por un elemento Notificacion con propiedad mensaje como "El dato x sube de 800".
+    }.
+    itero dato.lista_de_items creando item e indice añadiendo un elemento div compuesto {
+        por un elemento span con texto como item.titulo.
+        por un elemento span con texto como item.descripcion.
+        por un elemento span con texto como item.fecha.
+    }.
+}.
+
+hago una aplicación vue2 con nombre "App2" con rutas [{
+    path: "/",
+    name: "Home",
+    component: HomePage
+}] con traducciones {
+    es: {
+        Bienvenido: "Bienvenido/a"
+    },
+    ca: {
+        Bienvenido: "Benvingut/uda"
+    },
+    en: {
+        Bienvenido: "Welcome"
+    }
+} con plantilla compuesta por un elemento div con propiedad class como "App Component" compuesto {
+    por un elemento Header con propiedad title como "Titulo" con texto como "Un simple texto".
+    por un elemento router-view.
+    por un elemento Footer con propiedad title como "Título" compuesto {
+        por un elemento div con propiedad id como "capa_uno" compuesto {
+            por un elemento div con texto como "Un simple texto".
+        }.
+    }.
+    si dato.x es igual que 800 {
+        por un elemento Notificacion con propiedad mensaje como "El dato x es 800".
+    } pero si dato.x es menor que 800 {
+        por un elemento Notificacion con propiedad mensaje como "El dato x baja de 800".
+    } y si no {
+        por un elemento Notificacion con propiedad mensaje como "El dato x sube de 800".
+    }.
+    itero dato.lista_de_items creando item e indice añadiendo un elemento div compuesto {
+        por un elemento span con texto como item.titulo.
+        por un elemento span con texto como item.descripcion.
+        por un elemento span con texto como item.fecha.
+    }.
+} con estilos donde {
+    declaro regla aplicable "personalización de títulos" donde se aplica {
+        borde izquierdo de 5px.
+        borde derecho de 5px.
+        espaciado por arriba de 10px.
+    }.
+    a todo elemento ".Component.Page > .cabecera > .titulo_de_componente" y también
+    a todo elemento ".Component.Page > .cuerpo > .titulo_de_componente" se le aplica {
+        regla aplicable llamada "espaciado estándar" con (2).
+        borde izquierdo de 1px solid blue.
+        borde derecho de 1px solid green.
+        borde general de 1px solid yellow.
+        color de fondo de blue.
+        color de letra de red.
+    }.
+    /* Una media query es así: */
+    en casos donde "screen and (min-width: 900px)" {
+        a todo elemento "article > .titulo, article > .subtitulo" se le aplica {
+            regla aplicable llamada "borde 1" con (1).
+            reglas aplicables llamadas "negrita 1", "cursiva 1", "subrayada 1".
+            regla aplicable llamada "personalización de títulos".
+            decoración de texto de underline.
+            justificación de texto de justify.
+            alineación de texto de center.
+            alineación vertical de top.
+            modo de mostrar de block.
+            posición de absolute.
+            arriba de 0px.
+            izquiera de 2px.
+            derecha de 2px.
+        }.
+    }.
+}.

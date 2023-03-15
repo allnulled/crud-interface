@@ -1,0 +1,595 @@
+[TRACE] RestUtils.generateContextByRequestResponseFactory 2 rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnErrorFunction rest.standalone.js:47:29
+[TRACE] RestUtils.generateOnDispatchErrorFunction rest.standalone.js:47:29
+[TRACE] DataServer.create rest.standalone.js:47:29
+[TRACE] VirtualDataServer.constructor rest.standalone.js:47:29
+[TRACE] Hooks.create rest.standalone.js:47:29
+[TRACE] DataServer.prototype.initialize rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.initializeRest rest.standalone.js:47:29
+[TRACE] RestByDexie.constructor rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.initialize rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:mysql2/promise:createConnection rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection rest.standalone.js:47:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:ping rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.initializeAuth rest.standalone.js:47:29
+[TRACE] AuthByDexie.constructor rest.standalone.js:47:29
+[TRACE] AuthByMySQL.prototype.initialize rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addService rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticServiceInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicServiceInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addQuery rest.standalone.js:47:29
+[TRACE] RestUtils.basicQueryFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticQueryInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicQueryInterface rest.standalone.js:47:29
+[TRACE] VirtualDataServer.prototype.addProcess rest.standalone.js:47:29
+[TRACE] RestUtils.basicProcessFactory rest.standalone.js:47:29
+[TRACE] RestUtils.validateStaticProcessInterface rest.standalone.js:47:29
+[TRACE] RestUtils.validateDynamicProcessInterface rest.standalone.js:47:29
+[TRACE] DataServer.prototype.resetDatabase rest.standalone.js:47:29
+[TRACE] RestByDexie.prototype.resetDatabase rest.standalone.js:47:29
+custom_database_name rest.standalone.js:3005:17
+[TRACE] DataServer.prototype.listen rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createHttpServer rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createHttpServerController rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createDispatcher rest.standalone.js:47:29
+[TRACE] polyfill://require:http:createServer rest.standalone.js:47:29
+[TRACE] polyfill://require:http:createServer:listen rest.standalone.js:47:29
+GEThttp://127.0.0.1:8080/favicon.ico
+[HTTP/1.1 404 Not Found 3ms]
+
+[TRACE] DataServer.prototype.createClient rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:selectOne rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/select/one rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/one?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/select/one?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/one?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/one?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchSelectOne rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/one?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForSelectOne rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:selectMany rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/select/many rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/m…undefined&group=undefined&order=undefined&paginate=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/select/m…undefined&group=undefined&order=undefined&paginate=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/m…undefined&group=undefined&order=undefined&paginate=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/m…undefined&group=undefined&order=undefined&paginate=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchSelectMany rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/select/m…undefined&group=undefined&order=undefined&paginate=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForSelectMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] RestUtils.formatOrderFromRequest rest.standalone.js:47:29
+[TRACE] RestUtils.formatGroupFromRequest rest.standalone.js:47:29
+[TRACE] RestUtils.formatPaginationFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:insertOne rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one?item=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one?item=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one?item=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one?item=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchInsertOne rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/one?item=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForInsertOne rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataService.prototype.onQueryForSelectOne rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.selectOne rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Select one query:
+SELECT * 
+  FROM some_table_1
+  WHERE 1 = 1
+# No filtering rules rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] RestUtils.formatItemFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:insertMany rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many?items=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many?items=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many?items=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many?items=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchInsertMany rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/insert/many?items=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForInsertMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] RestByDexie.prototype.onError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.selectOne»
+      RestByMySQL.prototype.selectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1928:23
+async*DataService.prototype.onQueryForSelectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1530:33
+DataService.prototype.dispatchSelectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1402:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1361:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+selectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1176:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:83:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] DataService.prototype.onQueryForSelectMany rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.selectMany rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromGroupToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromOrderToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromPaginationToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Select many query:
+SELECT * 
+  FROM some_table_1
+  WHERE 1 = 1
+# No filtering rules
+# No grouping rules
+# No ordering rules
+  LIMIT 20
+  OFFSET 0 rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] RestUtils.formatItemsFromRequest rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:updateOne rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/update/one rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/one?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/update/one?where=undefined&values=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/one?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/one?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchUpdateOne rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/one?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForUpdateOne rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] DataService.prototype.onQueryForInsertOne rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.insertOne rest.standalone.js:47:29
+[TRACE] RestUtils.fromItemToKeysSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromItemToValuesSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Insert one query:
+INSERT 
+  INTO some_table_1 ()
+  VALUES () rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] VirtualDataService.prototype.onDispatchError rest.standalone.js:47:29
+[ERROR] Error: Required parameter «items» to be an (optionally JSON) array in order to «formatItemsFromRequest»
+      formatItemsFromRequest@http://127.0.0.1:8080/dist/rest.standalone.js:691:23
+DataService.prototype.onFormatParametersForInsertMany@http://127.0.0.1:8080/dist/rest.standalone.js:1630:46
+async*DataService.prototype.dispatchInsertMany@http://127.0.0.1:8080/dist/rest.standalone.js:1437:24
+DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1367:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+insertMany@http://127.0.0.1:8080/dist/rest.standalone.js:1204:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:86:62
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] RestUtils.formatValuesFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:updateMany rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/update/many rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/many?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/update/many?where=undefined&values=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/many?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/many?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchUpdateMany rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/update/many?where=undefined&values=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForUpdateMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] VirtualDataService.prototype.onDispatchError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.selectOne»
+      RestByMySQL.prototype.selectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1928:23
+async*DataService.prototype.onQueryForSelectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1530:33
+DataService.prototype.dispatchSelectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1402:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1361:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+selectOne@http://127.0.0.1:8080/dist/rest.standalone.js:1176:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:83:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] RestUtils.formatValuesFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:deleteOne rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one?where=undefined rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one?where=undefined rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one?where=undefined rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one?where=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchDeleteOne rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/one?where=undefined rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForDeleteOne rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] DataService.prototype.onQueryForUpdateOne rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.updateOne rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromItemToSettablesSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Select one query (in order to update one):
+SELECT * 
+  FROM some_table_1
+  WHERE 1 = 1
+# No filtering rules rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:rest:deleteMany rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many rest.standalone.js:47:29
+[TRACE] DataServer.prototype.createClient:request rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] VirtualDataServer.prototype.dispatchSelf rest.standalone.js:47:29
+[TRACE] METHOD: get rest.standalone.js:47:29
+[TRACE]    URL: http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:47:29
+[TRACE] RequestPolyfill.constructor rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.constructor rest.standalone.js:47:29
+[TRACE] DataServer.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require 2 rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] polyfill://require:path:join rest.standalone.js:47:29
+[TRACE] Registering service on: /rest/api/v1/some_table_1/ rest.standalone.js:47:29
+[TRACE] DataService.create rest.standalone.js:47:29
+[TRACE] RestUtils.basicServiceFactory:Service rest.standalone.js:47:29
+[TRACE] DataService.prototype.dispatch rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] DataService.prototype.dispatchDeleteMany rest.standalone.js:47:29
+[TRACE] DataService.prototype.generateContext rest.standalone.js:47:29
+[TRACE] RestUtils.require rest.standalone.js:47:29
+[TRACE] polyfill://require:url:parse rest.standalone.js:47:29
+http://unique.app.org:8585/rest/api/v1/some_table_1/delete/many?where=%5B%5B%22id%22%2C%22%3D%22%2C%221%22%5D%5D rest.standalone.js:266:29
+[TRACE] DataService.prototype.onFormatParametersForDeleteMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] RestByDexie.prototype.onError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.updateOne»
+      RestByMySQL.prototype.updateOne@http://127.0.0.1:8080/dist/rest.standalone.js:2033:23
+async*DataService.prototype.onQueryForUpdateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1669:33
+DataService.prototype.dispatchUpdateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1450:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1369:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+updateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1212:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:87:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] DataService.prototype.onQueryForUpdateMany rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.updateMany rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.fromItemToSettablesSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Update many query:
+UPDATE some_table_1
+  SET 
+  WHERE 1 = 1
+# No filtering rules rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] RestUtils.formatWhereFromRequest rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+undefined 000.ui.test.html:91:25
+[TRACE] DataService.prototype.onFormatOutputForSelectMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] DataService.prototype.onQueryForDeleteOne rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.deleteOne rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Select one query (in order to delete one):
+SELECT * 
+  FROM some_table_1
+  WHERE 1 = 1
+# No filtering rules rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataService.prototype.onFormatOutputForInsertOne rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] VirtualDataService.prototype.onDispatchError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.updateOne»
+      RestByMySQL.prototype.updateOne@http://127.0.0.1:8080/dist/rest.standalone.js:2033:23
+async*DataService.prototype.onQueryForUpdateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1669:33
+DataService.prototype.dispatchUpdateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1450:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1369:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+updateOne@http://127.0.0.1:8080/dist/rest.standalone.js:1212:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:87:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] RestByDexie.prototype.onError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.deleteOne»
+      RestByMySQL.prototype.deleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:2096:23
+async*DataService.prototype.onQueryForDeleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1738:33
+DataService.prototype.dispatchDeleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1474:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1373:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+deleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1230:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:89:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] DataService.prototype.onQueryForDeleteMany rest.standalone.js:47:29
+[TRACE] RestByMySQL.prototype.deleteMany rest.standalone.js:47:29
+[TRACE] RestUtils.fromWhereToSQL rest.standalone.js:47:29
+[TRACE] RestUtils.expandConnection:connection.proxifiedQuery rest.standalone.js:47:29
+[·SQL·] # Delete many query:
+DELETE
+  FROM some_table_1
+  WHERE 1 = 1
+# No filtering rules rest.standalone.js:56:29
+[TRACE] polyfill://require:mysql2/promise:createConnection:query rest.standalone.js:47:29
+Function «RestUtils.modulePolyfills.mysql2/promises.createConnection.query» to be overwritten rest.standalone.js:252:37
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] DataService.prototype.onRespond rest.standalone.js:47:29
+[TRACE] RestUtils.respondContext rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] VirtualDataService.prototype.onDispatchError rest.standalone.js:47:29
+[ERROR] Error: No items were found on «some_table_1» by using the specified filters on «RestByMySQL.prototype.deleteOne»
+      RestByMySQL.prototype.deleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:2096:23
+async*DataService.prototype.onQueryForDeleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1738:33
+DataService.prototype.dispatchDeleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1474:24
+async*DataService.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1373:29
+DataServer.prototype.dispatch@http://127.0.0.1:8080/dist/rest.standalone.js:1054:28
+VirtualDataServer.prototype.dispatchSelf@http://127.0.0.1:8080/dist/rest.standalone.js:3190:21
+request@http://127.0.0.1:8080/dist/rest.standalone.js:1128:46
+deleteOne@http://127.0.0.1:8080/dist/rest.standalone.js:1230:35
+@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:89:61
+async*@http://127.0.0.1:8080/test/000.ui.test.html?msg=ok:95:11
+rest.standalone.js:72:33
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataService.prototype.onRespond rest.standalone.js:47:29
+[TRACE] RestUtils.respondContext rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] DataService.prototype.onFormatOutputForUpdateMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook 2 rest.standalone.js:47:29
+[TRACE] DataService.prototype.onFormatOutputForDeleteMany rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataService.prototype.onRespond rest.standalone.js:47:29
+[TRACE] RestUtils.respondContext rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29
+[TRACE] Hooks.prototype.useHook rest.standalone.js:47:29
+[TRACE] DataService.prototype.onRespond rest.standalone.js:47:29
+[TRACE] RestUtils.respondContext rest.standalone.js:47:29
+[TRACE] RestUtils.wrapResponse rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.writeHead rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.write rest.standalone.js:47:29
+[TRACE] ResponsePolyfill.prototype.end rest.standalone.js:47:29

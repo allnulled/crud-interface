@@ -1,0 +1,122 @@
+importo api nativa.
+
+hago un hecho asíncrono donde {
+
+    conecto asíncronamente una base de datos tipo "mysql2" configurada con {
+        user: "root",
+        password: "toor",
+        host: "127.0.0.1",
+        port: 3306,
+        database: "testing_rest_1"
+    } creando constante conexion.
+
+    hago asíncronamente conexion.connection.query("DROP DATABASE IF EXISTS testing_rest_1;").
+    hago asíncronamente conexion.connection.query("CREATE DATABASE testing_rest_1;").
+    hago asíncronamente conexion.connection.query("USE testing_rest_1;").
+    
+    creo authScript como [
+        `CREATE TABLE auth_pending_users (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(100),
+            password VARCHAR(100),
+            email VARCHAR(100),
+            confirmation_token VARCHAR(100)
+        );`, `CREATE TABLE auth_users (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(100),
+            password VARCHAR(100),
+            email VARCHAR(100),
+            recovery_token VARCHAR(100),
+            description VARCHAR(200)
+        );`, `CREATE TABLE auth_groups (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(100),
+            description VARCHAR(200)
+        );`, `CREATE TABLE auth_privileges (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(100),
+            description VARCHAR(200)
+        );`, `CREATE TABLE auth_sessions (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            id_user INT,
+            token VARCHAR(100),
+            FOREIGN KEY (id_user) REFERENCES auth_users(id)
+        );`, `CREATE TABLE auth_groups_of_users (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            id_user INT,
+            id_group INT,
+            FOREIGN KEY (id_user) REFERENCES auth_users(id),
+            FOREIGN KEY (id_group) REFERENCES auth_groups(id)
+        );`, `CREATE TABLE auth_privileges_of_groups (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            id_privilege INT,
+            id_group INT,
+            FOREIGN KEY (id_privilege) REFERENCES auth_privileges(id),
+            FOREIGN KEY (id_group) REFERENCES auth_groups(id)
+        );`,
+        `INSERT INTO auth_users (name, password, email) VALUES ('administrator', 'administrator', 'carlcarlsonc18@gmail.com');`,
+        `INSERT INTO auth_groups (name, description) VALUES ('administrators', 'the administration');`,
+        `INSERT INTO auth_privileges (name, description) VALUES ('to administrate', 'to administrate');`,
+        `INSERT INTO auth_groups_of_users (id_user, id_group) VALUES ('1', '1');`,
+        `INSERT INTO auth_privileges_of_groups (id_group, id_privilege) VALUES ('1', '1');`
+    ].
+
+    desde 0 hasta authScript.length {
+        creo item como authScript[index].
+        creo resultado como asíncronamente conexion.connection.query(item).
+        desacoplo constantes [ salida ] a partir de resultado.
+        imprimo salida.
+    }.
+
+    selecciono asíncronamente a varios ítems
+        en modelo "auth_users"
+        filtrando por [["id","=","1"]]
+        usando adaptador conexion
+        creando constante output1.
+
+    inserto asíncronamente a un ítem
+        en modelo "auth_users"
+        con valores {
+            name: "pepito",
+            password: "palotes.232",
+            email: "pepito.palotes.232@email.com",
+            description: "ok..."
+        }
+        usando adaptador conexion.
+
+    inserto asíncronamente a varios ítems
+        en modelo "auth_users"
+        con valores [{
+            name: "pepito2",
+            password: "palotes",
+            email: "pepito2.palotes@email.com",
+            description: "otro."
+        },{
+            name: "pepito3",
+            password: "palotes",
+            email: "pepito3.palotes@email.com",
+            description: "otro."
+        },{
+            name: "pepito4",
+            password: "palotes",
+            email: "pepito4.palotes@email.com",
+            description: "otro."
+        },{
+            name: "pepito5",
+            password: "palotes",
+            email: "pepito5.palotes@email.com",
+            description: "otro."
+        }]
+        usando adaptador conexion.
+
+    selecciono asíncronamente a un ítem
+        en modelo "auth_users"
+        filtrando por [["id","=","3"]]
+        usando adaptador conexion
+        creando constante output2.
+    
+
+
+    imprimo output2.
+
+} en errores imprimo error.

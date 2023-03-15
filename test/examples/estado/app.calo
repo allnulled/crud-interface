@@ -1,0 +1,274 @@
+Compilable con:
+  ./lib/nativa/nativa.calo
+  ./lib/db/db.calo
+  ./lib/nativa/components.calo
+  ./lib/componentes/Icono/componente.calo
+Ejecutable como documento HTML5
+    con autor allnulled
+    con nombre estado
+    con versión 0.0.1
+<head>
+    <title>Estado 2.0</title>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/nativa/components.css" />
+    <script src="./lib/nativa/nativa.js"></script>
+    <script src="./lib/nativa/components.js"></script>
+    <script src="./lib/db/db.js"></script>
+</head>
+<body><div id="app"></div></body>.
+
+creo App como una aplicación vue2 con nombre "App" con rutas [{
+    propiedad path como "/login".
+    propiedad name como "Login".
+    propiedad component como PaginaDeLogin.
+    propiedad props como {}.
+},{
+    propiedad path como "/logout".
+    propiedad name como "Logout".
+    propiedad component como PaginaDeLogout.
+    propiedad props como {}.
+},{
+    propiedad path como "/guia".
+    propiedad name como "Guia".
+    propiedad component como PaginaDeGuia.
+    propiedad props como {}.
+},{
+    propiedad path como "/votaciones/problemas/propuestos".
+    propiedad name como "ProblemasPropuestos".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","problemas","propuestos"], atrasHacia: "/votaciones/problemas" }.
+},{
+    propiedad path como "/votaciones/problemas/destacados".
+    propiedad name como "ProblemasDestacados".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","problemas","destacados"], atrasHacia: "/votaciones/problemas" }.
+},{
+    propiedad path como "/votaciones/problemas/aprobados".
+    propiedad name como "ProblemasAprobados".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","problemas","aprobados"], atrasHacia: "/votaciones/problemas" }.
+},{
+    propiedad path como "/votaciones/problemas/nuevo".
+    propiedad name como "NuevoProblema".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","problemas","nuevo"], atrasHacia: "/votaciones/problemas" }.
+},{
+    propiedad path como "/votaciones/problemas".
+    propiedad name como "VotacionesDeProblemas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","problemas"], atrasHacia: "/votaciones" }.
+},{
+    propiedad path como "/votaciones/soluciones/propuestas".
+    propiedad name como "SolucionesPropuestas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","soluciones","propuestas"], atrasHacia: "/votaciones/soluciones" }.
+},{
+    propiedad path como "/votaciones/soluciones/destacadas".
+    propiedad name como "SolucionesDestacadas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","soluciones","destacadas"], atrasHacia: "/votaciones/soluciones" }.
+},{
+    propiedad path como "/votaciones/soluciones/aprobadas".
+    propiedad name como "SolucionesAprobadas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","soluciones","aprobadas"], atrasHacia: "/votaciones/soluciones" }.
+},{
+    propiedad path como "/votaciones/soluciones/nueva".
+    propiedad name como "NuevaSolucion".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","soluciones","nueva"], atrasHacia: "/votaciones/soluciones" }.
+},{
+    propiedad path como "/votaciones/soluciones".
+    propiedad name como "VotacionesDeSoluciones".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","soluciones"], atrasHacia: "/votaciones" }.
+},{
+    propiedad path como "/votaciones/implementaciones/propuestas".
+    propiedad name como "ImplementacionesPropuestas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","implementaciones","propuestas"], atrasHacia: "/votaciones/implementaciones" }.
+},{
+    propiedad path como "/votaciones/implementaciones/destacadas".
+    propiedad name como "ImplementacionesDestacadas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","implementaciones","destacadas"], atrasHacia: "/votaciones/implementaciones" }.
+},{
+    propiedad path como "/votaciones/implementaciones/aprobadas".
+    propiedad name como "ImplementacionesAprobadas".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","implementaciones","aprobadas"], atrasHacia: "/votaciones/implementaciones" }.
+},{
+    propiedad path como "/votaciones/implementaciones/nueva".
+    propiedad name como "NuevaSolucion".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","implementaciones","nueva"], atrasHacia: "/votaciones/implementaciones" }.
+},{
+    propiedad path como "/votaciones/implementaciones".
+    propiedad name como "VotacionesDeImplementaciones".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","implementaciones"], atrasHacia: "/votaciones" }.
+},{
+    propiedad path como "/votaciones/seguimiento".
+    propiedad name como "VotacionesDeSeguimiento".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones","seguimiento"], atrasHacia: "/votaciones" }.
+},{
+    propiedad path como "/votaciones".
+    propiedad name como "Votaciones".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["votaciones"] }.
+},{
+    propiedad path como "/leyes".
+    propiedad name como "Leyes".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["leyes"], atrasHacia: "/" }.
+},{
+    propiedad path como "/confrontaciones".
+    propiedad name como "Confrontaciones".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["confrontaciones"], atrasHacia: "/" }.
+},{
+    propiedad path como "/educacion".
+    propiedad name como "Educacion".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["educacion"], atrasHacia: "/" }.
+},{
+    propiedad path como "/noticias".
+    propiedad name como "Noticias".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["noticias"], atrasHacia: "/" }.
+},{
+    propiedad path como "/economia".
+    propiedad name como "Economia".
+    propiedad component como PaginaDeSeccion.
+    propiedad props como { seccion: ["economia"], atrasHacia: "/" }.
+},{
+    propiedad path como "/preferencias".
+    propiedad name como "Preferencias".
+    propiedad component como PaginaDePreferencias.
+    propiedad props como {}.
+},{
+    propiedad path como "/".
+    propiedad name como "Home".
+    propiedad component como PaginaDeInicio.
+    propiedad props como {}.
+}] con traducciones {
+    propiedad es como {}.
+    propiedad en como {}.
+    propiedad ca como {}.
+} con plantilla {
+    <div class="App Component">
+        <router-view :app="this"></router-view>
+        <SoloEscritorio>
+            <LayoutHorizontal :separacion="5">
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        Soy una celda
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="100%" clases="Carta">
+                        En una row
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        O sea que
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        A ver si me entiendes...
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" :columnas="3" clases="Carta">
+                        Deberían verse 2 celdas horizontalmente en lugar de cuatro
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="1%" :columnas="1" clases="Carta">
+                        OK???
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+            </LayoutHorizontal>
+        </SoloEscritorio>
+        <SoloTablet>
+            <LayoutHorizontal :separacion="5">
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="100%" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+            </LayoutHorizontal>
+            <LayoutHorizontal :separacion="5">
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+            </LayoutHorizontal>
+            <LayoutHorizontal :separacion="5">
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                    <CeldaHorizontal ancho="100%" :columnas="1" clases="Carta">
+                        En tablet soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+            </LayoutHorizontal>
+        </SoloTablet>
+        <SoloMovil>
+            <LayoutHorizontal :separacion="5">
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En movil soy asi<br/>
+                        En movil soy asi<br/>
+                        En movil soy asi<br/>
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="100%" clases="Carta">
+                        En movil soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En movil soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" clases="Carta">
+                        En movil soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" :columnas="3" clases="Carta">
+                        En movil soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+                <FilaHorizontal>
+                    <CeldaHorizontal ancho="1%" :columnas="1" clases="Carta">
+                        En movil soy asi
+                    </CeldaHorizontal>
+                </FilaHorizontal>
+            </LayoutHorizontal>
+        </SoloMovil>
+    </div>
+} con estilos {
+    html {}
+    body {}
+    .Component {}
+    .App {}
+} con lógica {
+    retorno {
+        propiedad watch como {
+            $route: una función donde {
+                si no this.authentication hago this.$router.history.push("/login").
+            }
+        }.
+        método mounted donde {
+            si no this.authentication hago this.$router.history.push("/login").
+        }.
+    }.
+} montada en "#app".

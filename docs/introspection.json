@@ -1,0 +1,1970 @@
+{
+  "DataServer": {
+    "id": "DataServer",
+    "statics": {
+      "create": [
+        "DataServer.create",
+        "0",
+        "function"
+      ],
+      "initialize": [
+        "DataServer.initialize",
+        "1",
+        "function"
+      ],
+      "RestInterface": [
+        "DataServer.RestInterface",
+        "2",
+        "function"
+      ],
+      "RestByMySQL": [
+        "DataServer.RestByMySQL",
+        "3",
+        "function"
+      ],
+      "AuthInterface": [
+        "DataServer.AuthInterface",
+        "4",
+        "function"
+      ],
+      "AuthByMySQL": [
+        "DataServer.AuthByMySQL",
+        "5",
+        "function"
+      ],
+      "DataService": [
+        "DataServer.DataService",
+        "6",
+        "function"
+      ],
+      "RestUtils": [
+        "DataServer.RestUtils",
+        "7",
+        "function"
+      ],
+      "Hooks": [
+        "DataServer.Hooks",
+        "8",
+        "function"
+      ],
+      "RestByDexie": [
+        "DataServer.RestByDexie",
+        "9",
+        "function"
+      ],
+      "AuthByDexie": [
+        "DataServer.AuthByDexie",
+        "10",
+        "function"
+      ],
+      "VirtualDataServer": [
+        "DataServer.VirtualDataServer",
+        "11",
+        "function"
+      ],
+      "VirtualDataService": [
+        "DataServer.VirtualDataService",
+        "12",
+        "function"
+      ]
+    },
+    "dynamics": {
+      "addService": [
+        "DataServer.prototype.addService",
+        "0",
+        "function"
+      ],
+      "addQuery": [
+        "DataServer.prototype.addQuery",
+        "1",
+        "function"
+      ],
+      "addProcess": [
+        "DataServer.prototype.addProcess",
+        "2",
+        "function"
+      ],
+      "dispatch": [
+        "DataServer.prototype.dispatch",
+        "3",
+        "function"
+      ],
+      "createDispatcher": [
+        "DataServer.prototype.createDispatcher",
+        "4",
+        "function"
+      ],
+      "createHttpServerController": [
+        "DataServer.prototype.createHttpServerController",
+        "5",
+        "function"
+      ],
+      "createHttpServer": [
+        "DataServer.prototype.createHttpServer",
+        "6",
+        "function"
+      ],
+      "listen": [
+        "DataServer.prototype.listen",
+        "7",
+        "function"
+      ],
+      "stopDatabaseConnection": [
+        "DataServer.prototype.stopDatabaseConnection",
+        "8",
+        "function"
+      ],
+      "stopHttpServer": [
+        "DataServer.prototype.stopHttpServer",
+        "9",
+        "function"
+      ],
+      "resetDatabase": [
+        "DataServer.prototype.resetDatabase",
+        "10",
+        "function"
+      ],
+      "resetAuth": [
+        "DataServer.prototype.resetAuth",
+        "11",
+        "function"
+      ],
+      "dispatchSelf": [
+        "DataServer.prototype.dispatchSelf",
+        "12",
+        "function"
+      ],
+      "createClient": [
+        "DataServer.prototype.createClient",
+        "13",
+        "function"
+      ],
+      "initialize": [
+        "DataServer.prototype.initialize",
+        "14",
+        "function"
+      ],
+      "initializeRest": [
+        "DataServer.prototype.initializeRest",
+        "15",
+        "function"
+      ],
+      "initializeAuth": [
+        "DataServer.prototype.initializeAuth",
+        "16",
+        "function"
+      ],
+      "onError": [
+        "DataServer.prototype.onError",
+        "17",
+        "function"
+      ],
+      "onDispatchError": [
+        "DataServer.prototype.onDispatchError",
+        "18",
+        "function"
+      ]
+    }
+  },
+  "VirtualDataServer": {
+    "id": "VirtualDataServer",
+    "statics": {
+      "create": [
+        "VirtualDataServer.create",
+        "0",
+        "function"
+      ],
+      "initialize": [
+        "VirtualDataServer.initialize",
+        "1",
+        "function"
+      ],
+      "throwOnErrorStatus": [
+        "VirtualDataServer.throwOnErrorStatus",
+        "2",
+        "function"
+      ]
+    },
+    "dynamics": {
+      "addService": [
+        "VirtualDataServer.prototype.addService",
+        "0",
+        "function"
+      ],
+      "addQuery": [
+        "VirtualDataServer.prototype.addQuery",
+        "1",
+        "function"
+      ],
+      "addProcess": [
+        "VirtualDataServer.prototype.addProcess",
+        "2",
+        "function"
+      ],
+      "dispatch": [
+        "VirtualDataServer.prototype.dispatch",
+        "3",
+        "function"
+      ],
+      "createDispatcher": [
+        "VirtualDataServer.prototype.createDispatcher",
+        "4",
+        "function"
+      ],
+      "createHttpServerController": [
+        "VirtualDataServer.prototype.createHttpServerController",
+        "5",
+        "function"
+      ],
+      "createHttpServer": [
+        "VirtualDataServer.prototype.createHttpServer",
+        "6",
+        "function"
+      ],
+      "listen": [
+        "VirtualDataServer.prototype.listen",
+        "7",
+        "function"
+      ],
+      "stopDatabaseConnection": [
+        "VirtualDataServer.prototype.stopDatabaseConnection",
+        "8",
+        "function"
+      ],
+      "stopHttpServer": [
+        "VirtualDataServer.prototype.stopHttpServer",
+        "9",
+        "function"
+      ],
+      "resetDatabase": [
+        "VirtualDataServer.prototype.resetDatabase",
+        "10",
+        "function"
+      ],
+      "resetAuth": [
+        "VirtualDataServer.prototype.resetAuth",
+        "11",
+        "function"
+      ],
+      "dispatchSelf": [
+        "VirtualDataServer.prototype.dispatchSelf",
+        "12",
+        "function"
+      ],
+      "createClient": [
+        "VirtualDataServer.prototype.createClient",
+        "13",
+        "function"
+      ],
+      "initialize": [
+        "VirtualDataServer.prototype.initialize",
+        "14",
+        "function"
+      ],
+      "initializeRest": [
+        "VirtualDataServer.prototype.initializeRest",
+        "15",
+        "function"
+      ],
+      "initializeAuth": [
+        "VirtualDataServer.prototype.initializeAuth",
+        "16",
+        "function"
+      ],
+      "onError": [
+        "VirtualDataServer.prototype.onError",
+        "17",
+        "function"
+      ],
+      "onDispatchError": [
+        "VirtualDataServer.prototype.onDispatchError",
+        "18",
+        "function"
+      ]
+    }
+  },
+  "DataService": {
+    "id": "DataService",
+    "statics": {
+      "create": [
+        "DataService.create",
+        "0",
+        "function"
+      ],
+      "initialize": [
+        "DataService.initialize",
+        "1",
+        "function"
+      ],
+      "path": [
+        "DataService.path",
+        "2",
+        "function"
+      ]
+    },
+    "dynamics": {
+      "initialize": [
+        "DataService.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "generateContext": [
+        "DataService.prototype.generateContext",
+        "1",
+        "function"
+      ],
+      "dispatch": [
+        "DataService.prototype.dispatch",
+        "2",
+        "function"
+      ],
+      "dispatchDefine": [
+        "DataService.prototype.dispatchDefine",
+        "3",
+        "function"
+      ],
+      "dispatchSelectOne": [
+        "DataService.prototype.dispatchSelectOne",
+        "4",
+        "function"
+      ],
+      "dispatchSelectMany": [
+        "DataService.prototype.dispatchSelectMany",
+        "5",
+        "function"
+      ],
+      "dispatchInsertOne": [
+        "DataService.prototype.dispatchInsertOne",
+        "6",
+        "function"
+      ],
+      "dispatchInsertMany": [
+        "DataService.prototype.dispatchInsertMany",
+        "7",
+        "function"
+      ],
+      "dispatchUpdateOne": [
+        "DataService.prototype.dispatchUpdateOne",
+        "8",
+        "function"
+      ],
+      "dispatchUpdateMany": [
+        "DataService.prototype.dispatchUpdateMany",
+        "9",
+        "function"
+      ],
+      "dispatchDeleteOne": [
+        "DataService.prototype.dispatchDeleteOne",
+        "10",
+        "function"
+      ],
+      "dispatchDeleteMany": [
+        "DataService.prototype.dispatchDeleteMany",
+        "11",
+        "function"
+      ],
+      "dispatchGetFile": [
+        "DataService.prototype.dispatchGetFile",
+        "12",
+        "function"
+      ],
+      "dispatchSetFile": [
+        "DataService.prototype.dispatchSetFile",
+        "13",
+        "function"
+      ],
+      "onFormatParametersForSelectOne": [
+        "DataService.prototype.onFormatParametersForSelectOne",
+        "14",
+        "function"
+      ],
+      "onQueryForSelectOne": [
+        "DataService.prototype.onQueryForSelectOne",
+        "15",
+        "function"
+      ],
+      "onFormatOutputForSelectOne": [
+        "DataService.prototype.onFormatOutputForSelectOne",
+        "16",
+        "function"
+      ],
+      "onFormatParametersForSelectMany": [
+        "DataService.prototype.onFormatParametersForSelectMany",
+        "17",
+        "function"
+      ],
+      "onQueryForSelectMany": [
+        "DataService.prototype.onQueryForSelectMany",
+        "18",
+        "function"
+      ],
+      "onFormatOutputForSelectMany": [
+        "DataService.prototype.onFormatOutputForSelectMany",
+        "19",
+        "function"
+      ],
+      "onFormatParametersForInsertOne": [
+        "DataService.prototype.onFormatParametersForInsertOne",
+        "20",
+        "function"
+      ],
+      "onQueryForInsertOne": [
+        "DataService.prototype.onQueryForInsertOne",
+        "21",
+        "function"
+      ],
+      "onFormatOutputForInsertOne": [
+        "DataService.prototype.onFormatOutputForInsertOne",
+        "22",
+        "function"
+      ],
+      "onFormatParametersForInsertMany": [
+        "DataService.prototype.onFormatParametersForInsertMany",
+        "23",
+        "function"
+      ],
+      "onQueryForInsertMany": [
+        "DataService.prototype.onQueryForInsertMany",
+        "24",
+        "function"
+      ],
+      "onFormatOutputForInsertMany": [
+        "DataService.prototype.onFormatOutputForInsertMany",
+        "25",
+        "function"
+      ],
+      "onFormatParametersForUpdateOne": [
+        "DataService.prototype.onFormatParametersForUpdateOne",
+        "26",
+        "function"
+      ],
+      "onQueryForUpdateOne": [
+        "DataService.prototype.onQueryForUpdateOne",
+        "27",
+        "function"
+      ],
+      "onFormatOutputForUpdateOne": [
+        "DataService.prototype.onFormatOutputForUpdateOne",
+        "28",
+        "function"
+      ],
+      "onFormatParametersForUpdateMany": [
+        "DataService.prototype.onFormatParametersForUpdateMany",
+        "29",
+        "function"
+      ],
+      "onQueryForUpdateMany": [
+        "DataService.prototype.onQueryForUpdateMany",
+        "30",
+        "function"
+      ],
+      "onFormatOutputForUpdateMany": [
+        "DataService.prototype.onFormatOutputForUpdateMany",
+        "31",
+        "function"
+      ],
+      "onFormatParametersForDeleteOne": [
+        "DataService.prototype.onFormatParametersForDeleteOne",
+        "32",
+        "function"
+      ],
+      "onQueryForDeleteOne": [
+        "DataService.prototype.onQueryForDeleteOne",
+        "33",
+        "function"
+      ],
+      "onFormatOutputForDeleteOne": [
+        "DataService.prototype.onFormatOutputForDeleteOne",
+        "34",
+        "function"
+      ],
+      "onFormatParametersForDeleteMany": [
+        "DataService.prototype.onFormatParametersForDeleteMany",
+        "35",
+        "function"
+      ],
+      "onQueryForDeleteMany": [
+        "DataService.prototype.onQueryForDeleteMany",
+        "36",
+        "function"
+      ],
+      "onFormatOutputForDeleteMany": [
+        "DataService.prototype.onFormatOutputForDeleteMany",
+        "37",
+        "function"
+      ],
+      "onFormatParametersForGetFile": [
+        "DataService.prototype.onFormatParametersForGetFile",
+        "38",
+        "function"
+      ],
+      "onQueryForGetFile": [
+        "DataService.prototype.onQueryForGetFile",
+        "39",
+        "function"
+      ],
+      "onServeFile": [
+        "DataService.prototype.onServeFile",
+        "40",
+        "function"
+      ],
+      "onFormatParametersForSetFile": [
+        "DataService.prototype.onFormatParametersForSetFile",
+        "41",
+        "function"
+      ],
+      "onQueryForSetFile": [
+        "DataService.prototype.onQueryForSetFile",
+        "42",
+        "function"
+      ],
+      "onPersistFile": [
+        "DataService.prototype.onPersistFile",
+        "43",
+        "function"
+      ],
+      "onRespond": [
+        "DataService.prototype.onRespond",
+        "44",
+        "function"
+      ],
+      "onDefine": [
+        "DataService.prototype.onDefine",
+        "45",
+        "function"
+      ],
+      "setServer": [
+        "DataService.prototype.setServer",
+        "46",
+        "function"
+      ],
+      "onError": [
+        "DataService.prototype.onError",
+        "47",
+        "function"
+      ],
+      "onDispatchError": [
+        "DataService.prototype.onDispatchError",
+        "48",
+        "function"
+      ]
+    }
+  },
+  "Hooks": {
+    "id": "Hooks",
+    "statics": {
+      "create": [
+        "Hooks.create",
+        "0",
+        "function"
+      ]
+    },
+    "dynamics": {
+      "addHook": [
+        "Hooks.prototype.addHook",
+        "0",
+        "function"
+      ],
+      "addHooks": [
+        "Hooks.prototype.addHooks",
+        "1",
+        "function"
+      ],
+      "useHook": [
+        "Hooks.prototype.useHook",
+        "2",
+        "function"
+      ],
+      "replaceHook": [
+        "Hooks.prototype.replaceHook",
+        "3",
+        "function"
+      ],
+      "removeHook": [
+        "Hooks.prototype.removeHook",
+        "4",
+        "function"
+      ],
+      "onError": [
+        "Hooks.prototype.onError",
+        "5",
+        "function"
+      ],
+      "onDispatchError": [
+        "Hooks.prototype.onDispatchError",
+        "6",
+        "function"
+      ]
+    }
+  },
+  "RestInterface": {
+    "id": "RestInterface",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "RestInterface.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "selectMany": [
+        "RestInterface.prototype.selectMany",
+        "1",
+        "function"
+      ],
+      "selectOne": [
+        "RestInterface.prototype.selectOne",
+        "2",
+        "function"
+      ],
+      "insertMany": [
+        "RestInterface.prototype.insertMany",
+        "3",
+        "function"
+      ],
+      "insertOne": [
+        "RestInterface.prototype.insertOne",
+        "4",
+        "function"
+      ],
+      "updateMany": [
+        "RestInterface.prototype.updateMany",
+        "5",
+        "function"
+      ],
+      "updateOne": [
+        "RestInterface.prototype.updateOne",
+        "6",
+        "function"
+      ],
+      "deleteMany": [
+        "RestInterface.prototype.deleteMany",
+        "7",
+        "function"
+      ],
+      "deleteOne": [
+        "RestInterface.prototype.deleteOne",
+        "8",
+        "function"
+      ],
+      "getFile": [
+        "RestInterface.prototype.getFile",
+        "9",
+        "function"
+      ],
+      "setFile": [
+        "RestInterface.prototype.setFile",
+        "10",
+        "function"
+      ],
+      "resetDatabase": [
+        "RestInterface.prototype.resetDatabase",
+        "11",
+        "function"
+      ]
+    }
+  },
+  "RestByMySQL": {
+    "id": "RestByMySQL",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "RestByMySQL.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "selectMany": [
+        "RestByMySQL.prototype.selectMany",
+        "1",
+        "function"
+      ],
+      "selectOne": [
+        "RestByMySQL.prototype.selectOne",
+        "2",
+        "function"
+      ],
+      "insertMany": [
+        "RestByMySQL.prototype.insertMany",
+        "3",
+        "function"
+      ],
+      "insertOne": [
+        "RestByMySQL.prototype.insertOne",
+        "4",
+        "function"
+      ],
+      "updateMany": [
+        "RestByMySQL.prototype.updateMany",
+        "5",
+        "function"
+      ],
+      "updateOne": [
+        "RestByMySQL.prototype.updateOne",
+        "6",
+        "function"
+      ],
+      "deleteMany": [
+        "RestByMySQL.prototype.deleteMany",
+        "7",
+        "function"
+      ],
+      "deleteOne": [
+        "RestByMySQL.prototype.deleteOne",
+        "8",
+        "function"
+      ],
+      "getFile": [
+        "RestByMySQL.prototype.getFile",
+        "9",
+        "function"
+      ],
+      "setFile": [
+        "RestByMySQL.prototype.setFile",
+        "10",
+        "function"
+      ],
+      "resetDatabase": [
+        "RestByMySQL.prototype.resetDatabase",
+        "11",
+        "function"
+      ],
+      "onError": [
+        "RestByMySQL.prototype.onError",
+        "12",
+        "function"
+      ],
+      "onDispatchError": [
+        "RestByMySQL.prototype.onDispatchError",
+        "13",
+        "function"
+      ]
+    }
+  },
+  "AuthInterface": {
+    "id": "AuthInterface",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "AuthInterface.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "authenticate": [
+        "AuthInterface.prototype.authenticate",
+        "1",
+        "function"
+      ],
+      "login": [
+        "AuthInterface.prototype.login",
+        "2",
+        "function"
+      ],
+      "logout": [
+        "AuthInterface.prototype.logout",
+        "3",
+        "function"
+      ],
+      "refresh": [
+        "AuthInterface.prototype.refresh",
+        "4",
+        "function"
+      ],
+      "register": [
+        "AuthInterface.prototype.register",
+        "5",
+        "function"
+      ],
+      "confirm": [
+        "AuthInterface.prototype.confirm",
+        "6",
+        "function"
+      ],
+      "forgot": [
+        "AuthInterface.prototype.forgot",
+        "7",
+        "function"
+      ],
+      "recover": [
+        "AuthInterface.prototype.recover",
+        "8",
+        "function"
+      ],
+      "unregister": [
+        "AuthInterface.prototype.unregister",
+        "9",
+        "function"
+      ],
+      "hasAuthorizationFor": [
+        "AuthInterface.prototype.hasAuthorizationFor",
+        "10",
+        "function"
+      ],
+      "resetAuth": [
+        "AuthInterface.prototype.resetAuth",
+        "11",
+        "function"
+      ]
+    }
+  },
+  "AuthByMySQL": {
+    "id": "AuthByMySQL",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "AuthByMySQL.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "onRespond": [
+        "AuthByMySQL.prototype.onRespond",
+        "1",
+        "function"
+      ],
+      "dispatch": [
+        "AuthByMySQL.prototype.dispatch",
+        "2",
+        "function"
+      ],
+      "generateContext": [
+        "AuthByMySQL.prototype.generateContext",
+        "3",
+        "function"
+      ],
+      "authenticate": [
+        "AuthByMySQL.prototype.authenticate",
+        "4",
+        "function"
+      ],
+      "dispatchRegister": [
+        "AuthByMySQL.prototype.dispatchRegister",
+        "5",
+        "function"
+      ],
+      "dispatchConfirm": [
+        "AuthByMySQL.prototype.dispatchConfirm",
+        "6",
+        "function"
+      ],
+      "dispatchLogin": [
+        "AuthByMySQL.prototype.dispatchLogin",
+        "7",
+        "function"
+      ],
+      "dispatchLogout": [
+        "AuthByMySQL.prototype.dispatchLogout",
+        "8",
+        "function"
+      ],
+      "dispatchForgot": [
+        "AuthByMySQL.prototype.dispatchForgot",
+        "9",
+        "function"
+      ],
+      "dispatchRecover": [
+        "AuthByMySQL.prototype.dispatchRecover",
+        "10",
+        "function"
+      ],
+      "dispatchUnregister": [
+        "AuthByMySQL.prototype.dispatchUnregister",
+        "11",
+        "function"
+      ],
+      "dispatchModify": [
+        "AuthByMySQL.prototype.dispatchModify",
+        "12",
+        "function"
+      ],
+      "onRegister": [
+        "AuthByMySQL.prototype.onRegister",
+        "13",
+        "function"
+      ],
+      "onConfirm": [
+        "AuthByMySQL.prototype.onConfirm",
+        "14",
+        "function"
+      ],
+      "onLogin": [
+        "AuthByMySQL.prototype.onLogin",
+        "15",
+        "function"
+      ],
+      "onLogout": [
+        "AuthByMySQL.prototype.onLogout",
+        "16",
+        "function"
+      ],
+      "onForgot": [
+        "AuthByMySQL.prototype.onForgot",
+        "17",
+        "function"
+      ],
+      "onRecover": [
+        "AuthByMySQL.prototype.onRecover",
+        "18",
+        "function"
+      ],
+      "onUnregister": [
+        "AuthByMySQL.prototype.onUnregister",
+        "19",
+        "function"
+      ],
+      "onModify": [
+        "AuthByMySQL.prototype.onModify",
+        "20",
+        "function"
+      ],
+      "onFormatParametersForRegister": [
+        "AuthByMySQL.prototype.onFormatParametersForRegister",
+        "21",
+        "function"
+      ],
+      "onFormatOutputForRegister": [
+        "AuthByMySQL.prototype.onFormatOutputForRegister",
+        "22",
+        "function"
+      ],
+      "onFormatParametersForConfirm": [
+        "AuthByMySQL.prototype.onFormatParametersForConfirm",
+        "23",
+        "function"
+      ],
+      "onFormatOutputForConfirm": [
+        "AuthByMySQL.prototype.onFormatOutputForConfirm",
+        "24",
+        "function"
+      ],
+      "onFormatParametersForLogin": [
+        "AuthByMySQL.prototype.onFormatParametersForLogin",
+        "25",
+        "function"
+      ],
+      "onFormatOutputForLogin": [
+        "AuthByMySQL.prototype.onFormatOutputForLogin",
+        "26",
+        "function"
+      ],
+      "onFormatParametersForLogout": [
+        "AuthByMySQL.prototype.onFormatParametersForLogout",
+        "27",
+        "function"
+      ],
+      "onFormatOutputForLogout": [
+        "AuthByMySQL.prototype.onFormatOutputForLogout",
+        "28",
+        "function"
+      ],
+      "onFormatParametersForForgot": [
+        "AuthByMySQL.prototype.onFormatParametersForForgot",
+        "29",
+        "function"
+      ],
+      "onFormatOutputForForgot": [
+        "AuthByMySQL.prototype.onFormatOutputForForgot",
+        "30",
+        "function"
+      ],
+      "onFormatParametersForRecover": [
+        "AuthByMySQL.prototype.onFormatParametersForRecover",
+        "31",
+        "function"
+      ],
+      "onFormatOutputForRecover": [
+        "AuthByMySQL.prototype.onFormatOutputForRecover",
+        "32",
+        "function"
+      ],
+      "onFormatParametersForUnregister": [
+        "AuthByMySQL.prototype.onFormatParametersForUnregister",
+        "33",
+        "function"
+      ],
+      "onFormatOutputForUnregister": [
+        "AuthByMySQL.prototype.onFormatOutputForUnregister",
+        "34",
+        "function"
+      ],
+      "onFormatParametersForModify": [
+        "AuthByMySQL.prototype.onFormatParametersForModify",
+        "35",
+        "function"
+      ],
+      "onFormatOutputForModify": [
+        "AuthByMySQL.prototype.onFormatOutputForModify",
+        "36",
+        "function"
+      ],
+      "register": [
+        "AuthByMySQL.prototype.register",
+        "37",
+        "function"
+      ],
+      "confirm": [
+        "AuthByMySQL.prototype.confirm",
+        "38",
+        "function"
+      ],
+      "login": [
+        "AuthByMySQL.prototype.login",
+        "39",
+        "function"
+      ],
+      "logout": [
+        "AuthByMySQL.prototype.logout",
+        "40",
+        "function"
+      ],
+      "forgot": [
+        "AuthByMySQL.prototype.forgot",
+        "41",
+        "function"
+      ],
+      "recover": [
+        "AuthByMySQL.prototype.recover",
+        "42",
+        "function"
+      ],
+      "unregister": [
+        "AuthByMySQL.prototype.unregister",
+        "43",
+        "function"
+      ],
+      "modify": [
+        "AuthByMySQL.prototype.modify",
+        "44",
+        "function"
+      ],
+      "resetAuth": [
+        "AuthByMySQL.prototype.resetAuth",
+        "45",
+        "function"
+      ],
+      "hasAuthorizationFor": [
+        "AuthByMySQL.prototype.hasAuthorizationFor",
+        "46",
+        "function"
+      ],
+      "onError": [
+        "AuthByMySQL.prototype.onError",
+        "47",
+        "function"
+      ],
+      "onDispatchError": [
+        "AuthByMySQL.prototype.onDispatchError",
+        "48",
+        "function"
+      ]
+    }
+  },
+  "RestUtils": {
+    "id": "RestUtils",
+    "statics": {
+      "prototype": [
+        "RestUtils.prototype",
+        "0",
+        "object"
+      ],
+      "modules": [
+        "RestUtils.modules",
+        "1",
+        "object"
+      ],
+      "modulePolyfills": [
+        "RestUtils.modulePolyfills",
+        "2",
+        "object"
+      ],
+      "require": [
+        "RestUtils.require",
+        "3",
+        "object"
+      ],
+      "define": [
+        "RestUtils.define",
+        "4",
+        "object"
+      ],
+      "definePolyfill": [
+        "RestUtils.definePolyfill",
+        "5",
+        "object"
+      ],
+      "wrapResponse": [
+        "RestUtils.wrapResponse",
+        "6",
+        "object"
+      ],
+      "respondContext": [
+        "RestUtils.respondContext",
+        "7",
+        "object"
+      ],
+      "generateRandomToken": [
+        "RestUtils.generateRandomToken",
+        "8",
+        "object"
+      ],
+      "generateOnErrorFunction": [
+        "RestUtils.generateOnErrorFunction",
+        "9",
+        "object"
+      ],
+      "generateContextByRequestResponseFactory": [
+        "RestUtils.generateContextByRequestResponseFactory",
+        "10",
+        "object"
+      ],
+      "generateOnDispatchErrorFunction": [
+        "RestUtils.generateOnDispatchErrorFunction",
+        "11",
+        "object"
+      ],
+      "noop": [
+        "RestUtils.noop",
+        "12",
+        "object"
+      ],
+      "basicServiceFactory": [
+        "RestUtils.basicServiceFactory",
+        "13",
+        "object"
+      ],
+      "basicQueryFactory": [
+        "RestUtils.basicQueryFactory",
+        "14",
+        "object"
+      ],
+      "basicProcessFactory": [
+        "RestUtils.basicProcessFactory",
+        "15",
+        "object"
+      ],
+      "basicControllerFallback": [
+        "RestUtils.basicControllerFallback",
+        "16",
+        "object"
+      ],
+      "sanitize": [
+        "RestUtils.sanitize",
+        "17",
+        "object"
+      ],
+      "sanitizeId": [
+        "RestUtils.sanitizeId",
+        "18",
+        "object"
+      ],
+      "availableOperators": [
+        "RestUtils.availableOperators",
+        "19",
+        "object"
+      ],
+      "validateStaticServiceInterface": [
+        "RestUtils.validateStaticServiceInterface",
+        "20",
+        "object"
+      ],
+      "validateDynamicServiceInterface": [
+        "RestUtils.validateDynamicServiceInterface",
+        "21",
+        "object"
+      ],
+      "validateStaticQueryInterface": [
+        "RestUtils.validateStaticQueryInterface",
+        "22",
+        "object"
+      ],
+      "validateDynamicQueryInterface": [
+        "RestUtils.validateDynamicQueryInterface",
+        "23",
+        "object"
+      ],
+      "validateStaticProcessInterface": [
+        "RestUtils.validateStaticProcessInterface",
+        "24",
+        "object"
+      ],
+      "validateDynamicProcessInterface": [
+        "RestUtils.validateDynamicProcessInterface",
+        "25",
+        "object"
+      ],
+      "expandConnection": [
+        "RestUtils.expandConnection",
+        "26",
+        "object"
+      ],
+      "formatTableFromRequest": [
+        "RestUtils.formatTableFromRequest",
+        "27",
+        "object"
+      ],
+      "formatWhereFromRequest": [
+        "RestUtils.formatWhereFromRequest",
+        "28",
+        "object"
+      ],
+      "formatOrderFromRequest": [
+        "RestUtils.formatOrderFromRequest",
+        "29",
+        "object"
+      ],
+      "formatGroupFromRequest": [
+        "RestUtils.formatGroupFromRequest",
+        "30",
+        "object"
+      ],
+      "formatPaginationFromRequest": [
+        "RestUtils.formatPaginationFromRequest",
+        "31",
+        "object"
+      ],
+      "formatItemFromRequest": [
+        "RestUtils.formatItemFromRequest",
+        "32",
+        "object"
+      ],
+      "formatItemsFromRequest": [
+        "RestUtils.formatItemsFromRequest",
+        "33",
+        "object"
+      ],
+      "formatValuesFromRequest": [
+        "RestUtils.formatValuesFromRequest",
+        "34",
+        "object"
+      ],
+      "fromWhereToSQL": [
+        "RestUtils.fromWhereToSQL",
+        "35",
+        "object"
+      ],
+      "fromOrderToSQL": [
+        "RestUtils.fromOrderToSQL",
+        "36",
+        "object"
+      ],
+      "fromGroupToSQL": [
+        "RestUtils.fromGroupToSQL",
+        "37",
+        "object"
+      ],
+      "fromPaginationToSQL": [
+        "RestUtils.fromPaginationToSQL",
+        "38",
+        "object"
+      ],
+      "fromItemToKeysSQL": [
+        "RestUtils.fromItemToKeysSQL",
+        "39",
+        "object"
+      ],
+      "fromItemsToKeysSQL": [
+        "RestUtils.fromItemsToKeysSQL",
+        "40",
+        "object"
+      ],
+      "fromItemToValuesSQL": [
+        "RestUtils.fromItemToValuesSQL",
+        "41",
+        "object"
+      ],
+      "fromItemToSettablesSQL": [
+        "RestUtils.fromItemToSettablesSQL",
+        "42",
+        "object"
+      ],
+      "fromItemsToValuesSQL": [
+        "RestUtils.fromItemsToValuesSQL",
+        "43",
+        "object"
+      ],
+      "fromWhereToFilterFunction": [
+        "RestUtils.fromWhereToFilterFunction",
+        "44",
+        "object"
+      ],
+      "fromURLToQuerystringObject": [
+        "RestUtils.fromURLToQuerystringObject",
+        "45",
+        "object"
+      ]
+    },
+    "dynamics": {}
+  },
+  "RestByDexie": {
+    "id": "RestByDexie",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "RestByDexie.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "selectMany": [
+        "RestByDexie.prototype.selectMany",
+        "1",
+        "function"
+      ],
+      "selectOne": [
+        "RestByDexie.prototype.selectOne",
+        "2",
+        "function"
+      ],
+      "insertMany": [
+        "RestByDexie.prototype.insertMany",
+        "3",
+        "function"
+      ],
+      "insertOne": [
+        "RestByDexie.prototype.insertOne",
+        "4",
+        "function"
+      ],
+      "updateMany": [
+        "RestByDexie.prototype.updateMany",
+        "5",
+        "function"
+      ],
+      "updateOne": [
+        "RestByDexie.prototype.updateOne",
+        "6",
+        "function"
+      ],
+      "deleteMany": [
+        "RestByDexie.prototype.deleteMany",
+        "7",
+        "function"
+      ],
+      "deleteOne": [
+        "RestByDexie.prototype.deleteOne",
+        "8",
+        "function"
+      ],
+      "getFile": [
+        "RestByDexie.prototype.getFile",
+        "9",
+        "function"
+      ],
+      "setFile": [
+        "RestByDexie.prototype.setFile",
+        "10",
+        "function"
+      ],
+      "resetDatabase": [
+        "RestByDexie.prototype.resetDatabase",
+        "11",
+        "function"
+      ],
+      "onError": [
+        "RestByDexie.prototype.onError",
+        "12",
+        "function"
+      ],
+      "onDispatchError": [
+        "RestByDexie.prototype.onDispatchError",
+        "13",
+        "function"
+      ]
+    }
+  },
+  "AuthByDexie": {
+    "id": "AuthByDexie",
+    "statics": {},
+    "dynamics": {
+      "initialize": [
+        "AuthByDexie.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "onRespond": [
+        "AuthByDexie.prototype.onRespond",
+        "1",
+        "function"
+      ],
+      "dispatch": [
+        "AuthByDexie.prototype.dispatch",
+        "2",
+        "function"
+      ],
+      "generateContext": [
+        "AuthByDexie.prototype.generateContext",
+        "3",
+        "function"
+      ],
+      "authenticate": [
+        "AuthByDexie.prototype.authenticate",
+        "4",
+        "function"
+      ],
+      "dispatchRegister": [
+        "AuthByDexie.prototype.dispatchRegister",
+        "5",
+        "function"
+      ],
+      "dispatchConfirm": [
+        "AuthByDexie.prototype.dispatchConfirm",
+        "6",
+        "function"
+      ],
+      "dispatchLogin": [
+        "AuthByDexie.prototype.dispatchLogin",
+        "7",
+        "function"
+      ],
+      "dispatchLogout": [
+        "AuthByDexie.prototype.dispatchLogout",
+        "8",
+        "function"
+      ],
+      "dispatchForgot": [
+        "AuthByDexie.prototype.dispatchForgot",
+        "9",
+        "function"
+      ],
+      "dispatchRecover": [
+        "AuthByDexie.prototype.dispatchRecover",
+        "10",
+        "function"
+      ],
+      "dispatchUnregister": [
+        "AuthByDexie.prototype.dispatchUnregister",
+        "11",
+        "function"
+      ],
+      "dispatchModify": [
+        "AuthByDexie.prototype.dispatchModify",
+        "12",
+        "function"
+      ],
+      "onRegister": [
+        "AuthByDexie.prototype.onRegister",
+        "13",
+        "function"
+      ],
+      "onConfirm": [
+        "AuthByDexie.prototype.onConfirm",
+        "14",
+        "function"
+      ],
+      "onLogin": [
+        "AuthByDexie.prototype.onLogin",
+        "15",
+        "function"
+      ],
+      "onLogout": [
+        "AuthByDexie.prototype.onLogout",
+        "16",
+        "function"
+      ],
+      "onForgot": [
+        "AuthByDexie.prototype.onForgot",
+        "17",
+        "function"
+      ],
+      "onRecover": [
+        "AuthByDexie.prototype.onRecover",
+        "18",
+        "function"
+      ],
+      "onUnregister": [
+        "AuthByDexie.prototype.onUnregister",
+        "19",
+        "function"
+      ],
+      "onModify": [
+        "AuthByDexie.prototype.onModify",
+        "20",
+        "function"
+      ],
+      "onFormatParametersForRegister": [
+        "AuthByDexie.prototype.onFormatParametersForRegister",
+        "21",
+        "function"
+      ],
+      "onFormatOutputForRegister": [
+        "AuthByDexie.prototype.onFormatOutputForRegister",
+        "22",
+        "function"
+      ],
+      "onFormatParametersForConfirm": [
+        "AuthByDexie.prototype.onFormatParametersForConfirm",
+        "23",
+        "function"
+      ],
+      "onFormatOutputForConfirm": [
+        "AuthByDexie.prototype.onFormatOutputForConfirm",
+        "24",
+        "function"
+      ],
+      "onFormatParametersForLogin": [
+        "AuthByDexie.prototype.onFormatParametersForLogin",
+        "25",
+        "function"
+      ],
+      "onFormatOutputForLogin": [
+        "AuthByDexie.prototype.onFormatOutputForLogin",
+        "26",
+        "function"
+      ],
+      "onFormatParametersForLogout": [
+        "AuthByDexie.prototype.onFormatParametersForLogout",
+        "27",
+        "function"
+      ],
+      "onFormatOutputForLogout": [
+        "AuthByDexie.prototype.onFormatOutputForLogout",
+        "28",
+        "function"
+      ],
+      "onFormatParametersForForgot": [
+        "AuthByDexie.prototype.onFormatParametersForForgot",
+        "29",
+        "function"
+      ],
+      "onFormatOutputForForgot": [
+        "AuthByDexie.prototype.onFormatOutputForForgot",
+        "30",
+        "function"
+      ],
+      "onFormatParametersForRecover": [
+        "AuthByDexie.prototype.onFormatParametersForRecover",
+        "31",
+        "function"
+      ],
+      "onFormatOutputForRecover": [
+        "AuthByDexie.prototype.onFormatOutputForRecover",
+        "32",
+        "function"
+      ],
+      "onFormatParametersForUnregister": [
+        "AuthByDexie.prototype.onFormatParametersForUnregister",
+        "33",
+        "function"
+      ],
+      "onFormatOutputForUnregister": [
+        "AuthByDexie.prototype.onFormatOutputForUnregister",
+        "34",
+        "function"
+      ],
+      "onFormatParametersForModify": [
+        "AuthByDexie.prototype.onFormatParametersForModify",
+        "35",
+        "function"
+      ],
+      "onFormatOutputForModify": [
+        "AuthByDexie.prototype.onFormatOutputForModify",
+        "36",
+        "function"
+      ],
+      "register": [
+        "AuthByDexie.prototype.register",
+        "37",
+        "function"
+      ],
+      "confirm": [
+        "AuthByDexie.prototype.confirm",
+        "38",
+        "function"
+      ],
+      "login": [
+        "AuthByDexie.prototype.login",
+        "39",
+        "function"
+      ],
+      "logout": [
+        "AuthByDexie.prototype.logout",
+        "40",
+        "function"
+      ],
+      "forgot": [
+        "AuthByDexie.prototype.forgot",
+        "41",
+        "function"
+      ],
+      "recover": [
+        "AuthByDexie.prototype.recover",
+        "42",
+        "function"
+      ],
+      "unregister": [
+        "AuthByDexie.prototype.unregister",
+        "43",
+        "function"
+      ],
+      "modify": [
+        "AuthByDexie.prototype.modify",
+        "44",
+        "function"
+      ],
+      "resetAuth": [
+        "AuthByDexie.prototype.resetAuth",
+        "45",
+        "function"
+      ],
+      "hasAuthorizationFor": [
+        "AuthByDexie.prototype.hasAuthorizationFor",
+        "46",
+        "function"
+      ],
+      "refresh": [
+        "AuthByDexie.prototype.refresh",
+        "47",
+        "function"
+      ],
+      "onError": [
+        "AuthByDexie.prototype.onError",
+        "48",
+        "function"
+      ],
+      "onDispatchError": [
+        "AuthByDexie.prototype.onDispatchError",
+        "49",
+        "function"
+      ]
+    }
+  },
+  "VirtualDataService": {
+    "id": "VirtualDataService",
+    "statics": {
+      "create": [
+        "VirtualDataService.create",
+        "0",
+        "function"
+      ],
+      "initialize": [
+        "VirtualDataService.initialize",
+        "1",
+        "function"
+      ],
+      "path": [
+        "VirtualDataService.path",
+        "2",
+        "function"
+      ]
+    },
+    "dynamics": {
+      "initialize": [
+        "VirtualDataService.prototype.initialize",
+        "0",
+        "function"
+      ],
+      "generateContext": [
+        "VirtualDataService.prototype.generateContext",
+        "1",
+        "function"
+      ],
+      "dispatch": [
+        "VirtualDataService.prototype.dispatch",
+        "2",
+        "function"
+      ],
+      "dispatchDefine": [
+        "VirtualDataService.prototype.dispatchDefine",
+        "3",
+        "function"
+      ],
+      "dispatchSelectOne": [
+        "VirtualDataService.prototype.dispatchSelectOne",
+        "4",
+        "function"
+      ],
+      "dispatchSelectMany": [
+        "VirtualDataService.prototype.dispatchSelectMany",
+        "5",
+        "function"
+      ],
+      "dispatchInsertOne": [
+        "VirtualDataService.prototype.dispatchInsertOne",
+        "6",
+        "function"
+      ],
+      "dispatchInsertMany": [
+        "VirtualDataService.prototype.dispatchInsertMany",
+        "7",
+        "function"
+      ],
+      "dispatchUpdateOne": [
+        "VirtualDataService.prototype.dispatchUpdateOne",
+        "8",
+        "function"
+      ],
+      "dispatchUpdateMany": [
+        "VirtualDataService.prototype.dispatchUpdateMany",
+        "9",
+        "function"
+      ],
+      "dispatchDeleteOne": [
+        "VirtualDataService.prototype.dispatchDeleteOne",
+        "10",
+        "function"
+      ],
+      "dispatchDeleteMany": [
+        "VirtualDataService.prototype.dispatchDeleteMany",
+        "11",
+        "function"
+      ],
+      "dispatchGetFile": [
+        "VirtualDataService.prototype.dispatchGetFile",
+        "12",
+        "function"
+      ],
+      "dispatchSetFile": [
+        "VirtualDataService.prototype.dispatchSetFile",
+        "13",
+        "function"
+      ],
+      "onFormatParametersForSelectOne": [
+        "VirtualDataService.prototype.onFormatParametersForSelectOne",
+        "14",
+        "function"
+      ],
+      "onQueryForSelectOne": [
+        "VirtualDataService.prototype.onQueryForSelectOne",
+        "15",
+        "function"
+      ],
+      "onFormatOutputForSelectOne": [
+        "VirtualDataService.prototype.onFormatOutputForSelectOne",
+        "16",
+        "function"
+      ],
+      "onFormatParametersForSelectMany": [
+        "VirtualDataService.prototype.onFormatParametersForSelectMany",
+        "17",
+        "function"
+      ],
+      "onQueryForSelectMany": [
+        "VirtualDataService.prototype.onQueryForSelectMany",
+        "18",
+        "function"
+      ],
+      "onFormatOutputForSelectMany": [
+        "VirtualDataService.prototype.onFormatOutputForSelectMany",
+        "19",
+        "function"
+      ],
+      "onFormatParametersForInsertOne": [
+        "VirtualDataService.prototype.onFormatParametersForInsertOne",
+        "20",
+        "function"
+      ],
+      "onQueryForInsertOne": [
+        "VirtualDataService.prototype.onQueryForInsertOne",
+        "21",
+        "function"
+      ],
+      "onFormatOutputForInsertOne": [
+        "VirtualDataService.prototype.onFormatOutputForInsertOne",
+        "22",
+        "function"
+      ],
+      "onFormatParametersForInsertMany": [
+        "VirtualDataService.prototype.onFormatParametersForInsertMany",
+        "23",
+        "function"
+      ],
+      "onQueryForInsertMany": [
+        "VirtualDataService.prototype.onQueryForInsertMany",
+        "24",
+        "function"
+      ],
+      "onFormatOutputForInsertMany": [
+        "VirtualDataService.prototype.onFormatOutputForInsertMany",
+        "25",
+        "function"
+      ],
+      "onFormatParametersForUpdateOne": [
+        "VirtualDataService.prototype.onFormatParametersForUpdateOne",
+        "26",
+        "function"
+      ],
+      "onQueryForUpdateOne": [
+        "VirtualDataService.prototype.onQueryForUpdateOne",
+        "27",
+        "function"
+      ],
+      "onFormatOutputForUpdateOne": [
+        "VirtualDataService.prototype.onFormatOutputForUpdateOne",
+        "28",
+        "function"
+      ],
+      "onFormatParametersForUpdateMany": [
+        "VirtualDataService.prototype.onFormatParametersForUpdateMany",
+        "29",
+        "function"
+      ],
+      "onQueryForUpdateMany": [
+        "VirtualDataService.prototype.onQueryForUpdateMany",
+        "30",
+        "function"
+      ],
+      "onFormatOutputForUpdateMany": [
+        "VirtualDataService.prototype.onFormatOutputForUpdateMany",
+        "31",
+        "function"
+      ],
+      "onFormatParametersForDeleteOne": [
+        "VirtualDataService.prototype.onFormatParametersForDeleteOne",
+        "32",
+        "function"
+      ],
+      "onQueryForDeleteOne": [
+        "VirtualDataService.prototype.onQueryForDeleteOne",
+        "33",
+        "function"
+      ],
+      "onFormatOutputForDeleteOne": [
+        "VirtualDataService.prototype.onFormatOutputForDeleteOne",
+        "34",
+        "function"
+      ],
+      "onFormatParametersForDeleteMany": [
+        "VirtualDataService.prototype.onFormatParametersForDeleteMany",
+        "35",
+        "function"
+      ],
+      "onQueryForDeleteMany": [
+        "VirtualDataService.prototype.onQueryForDeleteMany",
+        "36",
+        "function"
+      ],
+      "onFormatOutputForDeleteMany": [
+        "VirtualDataService.prototype.onFormatOutputForDeleteMany",
+        "37",
+        "function"
+      ],
+      "onFormatParametersForGetFile": [
+        "VirtualDataService.prototype.onFormatParametersForGetFile",
+        "38",
+        "function"
+      ],
+      "onQueryForGetFile": [
+        "VirtualDataService.prototype.onQueryForGetFile",
+        "39",
+        "function"
+      ],
+      "onServeFile": [
+        "VirtualDataService.prototype.onServeFile",
+        "40",
+        "function"
+      ],
+      "onFormatParametersForSetFile": [
+        "VirtualDataService.prototype.onFormatParametersForSetFile",
+        "41",
+        "function"
+      ],
+      "onQueryForSetFile": [
+        "VirtualDataService.prototype.onQueryForSetFile",
+        "42",
+        "function"
+      ],
+      "onPersistFile": [
+        "VirtualDataService.prototype.onPersistFile",
+        "43",
+        "function"
+      ],
+      "onRespond": [
+        "VirtualDataService.prototype.onRespond",
+        "44",
+        "function"
+      ],
+      "onDefine": [
+        "VirtualDataService.prototype.onDefine",
+        "45",
+        "function"
+      ],
+      "setServer": [
+        "VirtualDataService.prototype.setServer",
+        "46",
+        "function"
+      ],
+      "resetDatabase": [
+        "VirtualDataService.prototype.resetDatabase",
+        "47",
+        "function"
+      ],
+      "onError": [
+        "VirtualDataService.prototype.onError",
+        "48",
+        "function"
+      ],
+      "onDispatchError": [
+        "VirtualDataService.prototype.onDispatchError",
+        "49",
+        "function"
+      ]
+    }
+  },
+  "default": {
+    "id": "default",
+    "statics": {
+      "DataServer": [
+        "default.DataServer",
+        "0",
+        "object"
+      ],
+      "VirtualDataServer": [
+        "default.VirtualDataServer",
+        "1",
+        "object"
+      ],
+      "DataService": [
+        "default.DataService",
+        "2",
+        "object"
+      ],
+      "Hooks": [
+        "default.Hooks",
+        "3",
+        "object"
+      ],
+      "RestInterface": [
+        "default.RestInterface",
+        "4",
+        "object"
+      ],
+      "RestByMySQL": [
+        "default.RestByMySQL",
+        "5",
+        "object"
+      ],
+      "AuthInterface": [
+        "default.AuthInterface",
+        "6",
+        "object"
+      ],
+      "AuthByMySQL": [
+        "default.AuthByMySQL",
+        "7",
+        "object"
+      ],
+      "RestUtils": [
+        "default.RestUtils",
+        "8",
+        "object"
+      ],
+      "RestByDexie": [
+        "default.RestByDexie",
+        "9",
+        "object"
+      ],
+      "AuthByDexie": [
+        "default.AuthByDexie",
+        "10",
+        "object"
+      ],
+      "VirtualDataService": [
+        "default.VirtualDataService",
+        "11",
+        "object"
+      ],
+      "default": [
+        "default.default",
+        "12",
+        "object"
+      ]
+    },
+    "dynamics": {}
+  }
+}

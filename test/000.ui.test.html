@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test of automatic HTTP REST API</title>
+    <script src="../dist/rest.standalone.js"></script>
+</head>
+<body>
+    <h1>Test of automatic HTTP REST API:</h1>
+    <div id="tests"></div>
+    <script>
+        (async () => {
+            try {
+                window.api = Automatic_http_rest_api_interface({ platform: "browser" });
+                window.dataServer = api.VirtualDataServer.create({
+                    adapter: "dexie",
+                    credentials: {
+                        database: "custom_database_name"
+                    }
+                });
+                await dataServer.addService({
+                    path: "/some_table_1",
+                    table: "some_table_1",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_2",
+                    table: "some_table_2",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_3",
+                    table: "some_table_3",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_4",
+                    table: "some_table_4",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_5",
+                    table: "some_table_5",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_6",
+                    table: "some_table_6",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addService({
+                    path: "/some_table_7",
+                    table: "some_table_7",
+                    creationScript: "++id,name,surname,age,city,street",
+                    schema: {}
+                });
+                await dataServer.addQuery({
+                    id: "firstQuery",
+                    path: "/1",
+                    query: function(request, response) {
+                        try {
+                            return this.serve(200, {}, {
+                                message: "This is the result of the query handler"
+                            }, response);
+                            throw new Error("Query not found yet");
+                        } catch(error) {
+                            this.onDispatchError(error, request, response);
+                        }
+                    }
+                });
+                await dataServer.addProcess({
+                    id: "homeProcess",
+                    path: "/home",
+                    process: function(request, response, fallback) {
+                        try {
+                            // throw new Error("Process not found yet");
+                            return this.serve(200, {}, {
+                                message: "The process was successfully consumed"
+                            }, response);
+                        } catch(error) {
+                            return this.onDispatchError(error, request, response);
+                        }
+                    }
+                });
+                await dataServer.initialize();
+                await dataServer.resetDatabase();
+                await dataServer.listen(9899);
+                
+                window.client = await dataServer.createClient("http://unique.app.org:8585");
+
+                const responseRegister = await client.auth.register();
+                const responseConfirm = await client.auth.confirm();
+                const responseLogin = await client.auth.login();
+                const responseLogout = await client.auth.logout();
+                const responseForgot = await client.auth.forgot();
+                const responseRecover = await client.auth.recover();
+                const responseUnregister = await client.auth.unregister();
+                
+                const responseInsertOne = await client.rest.insertOne("some_table_2", {message:"one"});
+                const responseInsertMany = await client.rest.insertMany("some_table_2", [{message:"two"},{message:"three"},{message:"four"},{message:"five"},{message:"six"},{message:"seven"},{nessage:"eight"}]);
+                const responseSelectOne = await client.rest.selectOne("some_table_2", [["message","=", "five"]]);
+                const responseSelectMany = await client.rest.selectMany("some_table_2", [["message","!=","five"]], ["!id"], [], [1,2]);
+                const responseUpdateOne = await client.rest.updateOne("some_table_2", [["id","=",1]], {modified:true});
+                const responseUpdateMany = await client.rest.updateMany("some_table_2", [["id",">",4]], {modified:true});
+                const responseDeleteOne = await client.rest.deleteOne("some_table_2", [["id", "=", 1]]);
+                const responseDeleteMany = await client.rest.deleteMany("some_table_2", [["id",">",4]]);
+                
+                console.log(
+                    responseRegister.data.data, 
+                    responseConfirm.data.data,
+                    responseLogin.data.data,
+                    responseLogout.data.data,
+                    responseForgot.data.data,
+                    responseRecover.data.data,
+                    responseUnregister.data.data,
+                    responseInsertOne.data.data,
+                    responseInsertMany.data.data,
+                    responseSelectOne.data.data,
+                    responseSelectMany.data.data,
+                    responseUpdateOne.data.data,
+                    responseUpdateMany.data.data,
+                    responseDeleteOne.data.data,
+                    responseDeleteMany.data.data
+                );
+
+                const firstQueryResponse = await client.queries.firstQuery();
+                console.log(firstQueryResponse);
+                const homeProcessResponse = await client.processes.homeProcess();
+                console.log(homeProcessResponse);
+
+                // Test de isomorfismo con la API de Errores de Node.js:
+                try {
+                    await client.rest.selectOne("some_table_2", [["id", ">", 1]]);
+                } catch (error) {
+                    // [@SAME-IN-NODEJS
+                    if (typeof error.name !== "string") throw new Error("error 3748192800010");
+                    if (typeof error.message !== "string") throw new Error("error 3748192800011");
+                    if (typeof error.response !== "object") throw new Error("error 374819280000");
+                    if (typeof error.response.status !== "number") throw new Error("error 374819280001");
+                    if (typeof error.response.status !== "number") throw new Error("error 374819280001");
+                    if (typeof error.response.statusText !== "string") throw new Error("error 374819280002");
+                    if (typeof error.response.headers !== "object") throw new Error("error 374819280003");
+                    if (typeof error.response.data !== "object") throw new Error("error 374819280004");
+                    // SAME-IN-NODEJS@]
+                    if (typeof error.stack !== "object") throw new Error("error 3748192800012");
+                    throw error;
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        })();
+    </script>
+</body>
+</html>

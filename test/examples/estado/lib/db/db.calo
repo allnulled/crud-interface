@@ -1,0 +1,19 @@
+hago un hecho asíncrono donde {
+    conecto asíncronamente un sistema rest configurado con {
+        platform: "browser",
+        debug: false
+    } con server configurado con {
+        adapter: "dexie",
+        credentials: {
+            user: "root",
+            password: "toor",
+            host: "127.0.0.1",
+            port: 3306,
+            database: "testing_rest_1"
+        }
+    } donde {
+        imprimo "Instalando sistema REST...".
+    } en errores {
+        imprimo error.
+    }.
+}.
